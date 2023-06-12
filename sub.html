@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/sub.css">
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script defer src="./js/sub.js"></script>
+  <script defer src="./js/common.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="header">
+      <a href="main.html">
+        <img src="./img2/arrow-forward.png" class="arrow">
+      </a>
+      <h1>지역행사 </h1>
+      <img src="./img2/filter.png" alt="filter" class="filter">
+    </div>
+  </header>
+
+  <nav class="nav">
+    <ul class="month">
+      <li><a href="javascript:void(0)">6월</a></li>
+      <li><a href="javascript:void(0)">7월</a></li>
+      <li><a href="javascript:void(0)">8월</a></li>
+    </ul>
+    <ul class="indicator">
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </nav>
+
+  <div id="font_modal">
+    <div class="modal_box">
+      <div class="title">
+        <h1>Uniticket</h1>
+        <p>희망하는 글자 크기를 선택해 주새요.</p>
+      </div>
+      <div class="select">
+        <p>
+          <button id="nomal">기본</button>
+          <span>폰트 및 간격이 기본모드로 보여집니다.</span>
+        </p>
+        <p>
+          <button id="big">크게</button>
+          <span>폰트 및 간격이 유니모드에 <br>맞춰 크고 넓게 보여집니다.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="selected">
+    <a href="javascript:void(0)" class="active">인기순</a> |
+    <a href="javascript:void(0)">최신순</a>
+  </div>
+
+  <section>
+
+    <ul id="june" class="monthly">
+
+      <!-- 6월 인기 -->
+      <li class="section" data-month="june">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/sectionimg1.png" alt="s1">
+            <div class="section1_1">
+              <h3>더 브레인</h3>
+              <p>기간 | 2023.06.03 - 2023.06.04</p>
+              <p>부산 | 부산시민회관 대극장</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="section" data-month="june">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/sectionimg2.png" alt="s1">
+            <div class="section1_1">
+              <h3>더 브레인</h3>
+              <p>기간 | 2023.06.03 - 2023.06.04</p>
+              <p>부산 | 부산시민회관 대극장</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="section" data-month="june">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/sectionimg3.png" alt="s1">
+            <div class="section1_1">
+              <h3>나탈리 카르푸셴코 사진전</h3>
+              <p>기간 | 2022.12.23 - 2023.06.30</p>
+              <p>서울 | 그라운드시소 성수</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="section" data-month="june">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/sectionimg4.png" alt="s1">
+            <div class="section1_1">
+              <h3>2023 서울뮤직페스티벌</h3>
+              <p>기간 | 2023.06.24 - 2023.06.25</p>
+              <p>서울 | 올림픽공원 88잔디마당</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="section" data-month="june">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/sectionimg5.png" alt="s1">
+            <div class="section1_1">
+              <h3>제13회 화성 뱃놀이 축제 </h3>
+              <p>기간 | 2023.06.09 - 2023.06.11</p>
+              <p>화성 | 화성시 서신면 전곡항</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="section" data-month="june,july">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/sectionimg6.png" alt="s1">
+            <div class="section1_1">
+              <h3>싸이흠뻑쇼 2023</h3>
+              <p>기간 | 2023.06.30 - 2023.07.02</p>
+              <p>서울 | 잠실 종합운동장</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="section" data-month="june,july,august">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/july6.png" alt="s1">
+            <div class="section1_1">
+              <h3>연극 〈테베랜드〉</h3>
+              <p>기간 | 2023.06.28 - 2023.09.24</p>
+              <p>서울 | 충무아트센터 중극장 블랙</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+
+    <ul class="monthly" id="july">
+
+      <!-- 7월 인기 -->
+
+      <li class="section" data-month="june,july">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/july1.png" alt="j1">
+            <div class="section1_1">
+              <h3>이승철 전국투어 콘서트</h3>
+              <p>기간 | 2023.06.17 - 2023.07.22</p>
+              <p>전국</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="section" data-month="june,july">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/july2.png" alt="j2">
+            <div class="section1_1">
+              <h3>EQUAL 뮤지컬</h3>
+              <p>기간 | 2023.06.03 - 2023.07.24</p>
+              <p>서울 | 메타씨어터 유티플렉스 1관</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="section" data-month="june,july,august">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/july3.png" alt="j3">
+            <div class="section1_1">
+              <h3>뮤지컬 모차르트</h3>
+              <p>기간 | 2023.06.15 - 2023.08.22</p>
+              <p>서울 | 세종 문화회관 대극장</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="section" data-month="june,july,august">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/july4.png" alt="j4">
+            <div class="section1_1">
+              <h3>사춘기메들리</h3>
+              <p>기간 | 2023.05.05 - 2023.08.31</p>
+              <p>서울 | 소명아트홀</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="section" data-month="july">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/july5.png" alt="j5">
+            <div class="section1_1">
+              <h3>미스터트롯2</h3>
+              <p>기간 | 2023.07.22 - 2023.07.23</p>
+              <p>경기 | 성남아트센터 오페라하우스</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="section" data-month="june,july,august">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/july6.png" alt="j6">
+            <div class="section1_1">
+              <h3>연극 〈테베랜드〉</h3>
+              <p>기간 | 2023.06.28 - 2023.09.24</p>
+              <p>서울 | 충무아트센터 중극장 블랙</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+
+    <ul class="monthly" id="august">
+
+      <!-- 8월 인기 -->
+
+      <li class="section" data-month="august">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/uii.png" alt="j3">
+            <div class="section1_1">
+              <h3>불타는 트롯맨</h3>
+              <p>기간 | 2023.08.05 오후2시-7시</p>
+              <p>경기 | 수원컨벤션센터</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="section" data-month="june,july,august">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/sgg.png" alt="s1">
+            <div class="section1_1">
+              <h3>2023 구석구석 라이브</h3>
+              <p>기간 | 2023.04 - 2023.11</p>
+              <p>서울 | 도심거리,관광명소,한강</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="section" data-month="june,july,august">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/xpdlf.png" alt="s1">
+            <div class="section1_1">
+              <h3>더 테일</h3>
+              <p>기간 | 2023.06.07 - 2023.08.27</p>
+              <p>서울 | 서경대 예술센터 스콘2관</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+
+
+      <li class="section" data-month="june,july,august">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/july3.png" alt="j3">
+            <div class="section1_1">
+              <h3>뮤지컬 모차르트</h3>
+              <p>기간 | 2023.06.15 - 2023.08.22</p>
+              <p>서울 | 세종 문화회관 대극장</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="section" data-month="june,july,august">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/july4.png" alt="j4">
+            <div class="section1_1">
+              <h3>사춘기메들리</h3>
+              <p>기간 | 2023.05.05 - 2023.08.31</p>
+              <p>서울 | 소명아트홀</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="section" data-month="june,july,august">
+        <a href="detail.html">
+          <div class="sectionbox">
+            <img src="img2/july6.png" alt="j6">
+            <div class="section1_1">
+              <h3>연극 〈테베랜드〉</h3>
+              <p>기간 | 2023.06.28 - 2023.09.24</p>
+              <p>서울 | 충무아트센터 중극장 블랙</p>
+              <img src="img2/group1.png" alt="g1">
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+  </section>
+
+
+</body>
+
+</html>

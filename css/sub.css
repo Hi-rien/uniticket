@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: #fff;
+}
+
+.header {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .arrow {
+  width: 15px;
+  transform: rotate(180deg);
+}
+
+.header h1 {
+  font-size: 1.3em;
+}
+
+
+
+.selected {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: 80px;
+  display: flex;
+  justify-content: flex-end;
+  /* position: absolute;
+  right: 40px;
+  top: 180px; */
+}
+
+.selected a.active {
+  color: #1c2f69;
+}
+
+.selected a {
+  color: #c0c0c0;
+}
+
+body .nav {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  top: 60px;
+  z-index: 20;
+}
+body .nav ul {
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .nav ul li {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+body .nav ul li a {
+  line-height: 50px;
+  display: block;
+  color: #000;
+  font-weight: bold;
+  color: #626262;
+}
+body .nav ul.indicator {
+  height: auto;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+body .nav ul.indicator li {
+  height: 3px;
+  background-color: #FFC909;
+}
+body .nav ul.indicator li.active {
+  background-color: #1c2f69;
+}
+
+.monthly {
+  margin-top: 100px;
+}
+
+.monthly a {
+  display: block;
+  color: #000;
+}
+
+
+.section .sectionbox {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.section .sectionbox a {
+  display: block;
+}
+
+
+.section .sectionbox .section1_1 h3 {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.section .sectionbox .section1_1 p {
+  font-size: .8em;
+}
+
+.section .sectionbox .section1_1 img {
+  margin-top: 20px;
+}
+
+
+body #font_modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+body #font_modal .modal_box {
+  position: fixed;
+  top: 120px;
+  width: 100%;
+}
+body #font_modal .modal_box .title {
+  margin-bottom: 60px;
+}
+body #font_modal .modal_box .title h1 {
+  font-size: 45px;
+}
+body #font_modal .modal_box .title p {
+  font-size: 18px;
+}
+body #font_modal .modal_box .select p {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  gap: 30px;
+}
+body #font_modal .modal_box .select p button {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  background-color: #FFC909;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+body #font_modal .modal_box .select p button#nomal {
+  font-size: 18px;
+}
+body #font_modal .modal_box .select p span {
+  text-align: left;
+}
+body #font_modal .modal_box .select p:first-child {
+  margin-bottom: 30px;
+}
