@@ -1,0 +1,87 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Uniticket" />
+  <meta property="og:title" content="Uniticket" />
+  <meta property="og:description" content="모두가 하나 되는 쉬운 티켓팅" />
+  <meta property="og:image" content="./main_logo.png" />
+
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <script src="./js/jquery-1.11.2.min.js"></script>
+  <script defer src="./js/common.js"></script>
+  <script defer src="./js/index.js"></script>
+
+  <title>Uniticket</title>
+
+</head>
+
+<body>
+
+  <div id="load">
+    <div class="logo">
+      <img src="./main_logo.png" alt="로고">
+      <div class="content">
+        <h1>Uniticket</h1>
+        <p>모두가 하나 되는 쉬운 티켓팅</p>
+      </div>
+    </div>
+  </div>
+
+  <? include "login_check.php"; ?>
+  <div id="login">
+    <header>
+      <img src="./img/header_logo.png" alt="로고">
+      <div class="title">
+        <span></span>
+        <p>로그인/회원가입</p>
+        <span></span>
+      </div>
+    </header>
+    <section class="login">
+      <form action="login.php" method="post" name="login_form">
+        <p>
+          <label for="id">아이디</label><input type="text" name="id" id="id" value="uniticket">
+        </p>
+        <p>
+          <label for="pass">비밀번호</label><input type="password" name="pass" id="pass" value="123456">
+        </p>
+        <p class="auto_login">
+          <label for="auto_login">자동로그인</label><input type="checkbox" name="auto_login" id="auto_login" value="y">
+        </p>
+        <div class="button">
+          <div onclick="submit()">로그인</div>
+          <div onclick="skip()">건너뛰기</div>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <div class="box">
+        <a href="id_screen.html">아이디 찾기</a>
+        <a href="pw_screen.html">비밀번호 찾기</a>
+        <a href="./join.html">회원가입</a>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+</body>
+
+</html>

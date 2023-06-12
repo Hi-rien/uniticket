@@ -1,0 +1,97 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Uniticket" />
+  <meta property="og:title" content="Uniticket" />
+  <meta property="og:description" content="모두가 하나 되는 쉬운 티켓팅" />
+  <meta property="og:image" content="./main_logo.png" />
+
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <script src="./js/jquery-1.11.2.min.js"></script>
+  <script defer src="./js/common.js"></script>
+
+  <title>Uniticket</title>
+
+  <script>
+    function skip() {
+      location.href = 'index.html'
+    }
+
+    function search() {
+      name = document.member_form.name.value;
+      hp = document.member_form.hp.value;
+      text = $('#check')
+
+      $.post(
+        "id_search.php", {
+          name: name,
+          hp: hp
+        },
+        function (data) {
+          if (data) {
+            text.text(data)
+          }
+        }
+      )
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <div id="login">
+    <header>
+      <img src="./img/header_logo.png" alt="로고">
+      <div class="title">
+        <span></span>
+        <p>아이디 찾기</p>
+        <span></span>
+      </div>
+    </header>
+    <p id="check"></p>
+    <section class="login">
+      <form action="id_search.php" method="post" name="member_form">
+        <p>
+          <label for="name">이름</label><input type="text" name="name" id="name">
+        </p>
+        <p>
+          <label for="hp">전화번호</label><input type="text" name="hp" id="hp">
+        </p>
+        <div class="button">
+          <div onclick="search()">아이디 찾기</div>
+          <div onclick="skip()">로그인 페이지로 이동</div>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <div class="box">
+        <a href="id_screen.html">아이디 찾기</a>
+        <a href="pw_screen.html">비밀번호 찾기</a>
+        <a href="./join.html">회원가입</a>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+</body>
+
+</html>

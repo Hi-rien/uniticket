@@ -1,0 +1,517 @@
+* {
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes cursorMove {
+  0% {
+    transform: translate(0, 0) translateZ(10px);
+  }
+  80% {
+    transform: translate(-60px, -50px) translateZ(10px);
+  }
+  100% {
+    transform: translate(-60px, -50px) translateZ(5px);
+  }
+}
+
+@keyframes cursorMove {
+  0% {
+    transform: translate(0, 0) translateZ(10px);
+  }
+  80% {
+    transform: translate(-60px, -50px) translateZ(10px);
+  }
+  100% {
+    transform: translate(-60px, -50px) translateZ(5px);
+  }
+}
+@-webkit-keyframes cursorMove2 {
+  0% {
+    transform: translate(0, 0) translateZ(10px);
+  }
+  80% {
+    transform: translate(-60px, 30px) translateZ(10px);
+  }
+  100% {
+    transform: translate(-60px, 30px) translateZ(5px);
+  }
+}
+@keyframes cursorMove2 {
+  0% {
+    transform: translate(0, 0) translateZ(10px);
+  }
+  80% {
+    transform: translate(-60px, 30px) translateZ(10px);
+  }
+  100% {
+    transform: translate(-60px, 30px) translateZ(5px);
+  }
+}
+@-webkit-keyframes cursorMove3 {
+  0% {
+    transform: translate(0, 0) translateZ(10px);
+  }
+  80% {
+    transform: translate(0, 50px) translateZ(10px);
+  }
+  100% {
+    transform: translate(0, 50px) translateZ(5px);
+  }
+}
+@keyframes cursorMove3 {
+  0% {
+    transform: translate(0, 0) translateZ(10px);
+  }
+  80% {
+    transform: translate(0, 50px) translateZ(10px);
+  }
+  100% {
+    transform: translate(0, 50px) translateZ(5px);
+  }
+}
+@-webkit-keyframes click {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: translate(10px, -10px) translateZ(-10px);
+  }
+}
+@keyframes click {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: translate(10px, -10px) translateZ(-10px);
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  color: #626262;
+  overflow: hidden;
+}
+body a {
+  color: #000;
+}
+body header {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  position: fixed;
+  z-index: 20;
+}
+body header h2 {
+  font-size: 1.3em;
+  color: #000;
+}
+body header a {
+  display: block;
+}
+body header a .arrow {
+  width: 13px;
+  transform: rotate(180deg);
+}
+body .nav {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 50px;
+  z-index: 20;
+}
+body .nav ul {
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .nav ul li {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+body .nav ul li a {
+  line-height: 50px;
+  display: block;
+  color: #000;
+  font-weight: bold;
+  color: #626262;
+}
+body .nav ul.indicator {
+  height: auto;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+body .nav ul.indicator li {
+  height: 3px;
+  background-color: #FFC909;
+}
+body .nav ul.indicator li.active {
+  background-color: #1c2f69;
+}
+body .menu {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 30;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 0.75em;
+}
+body .menu div {
+  width: 80px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .menu div img {
+  width: 20px;
+}
+body .menu div:last-child img {
+  width: 15px;
+}
+body .menu a img {
+  width: 20px;
+}
+body #font_modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 25;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+body #font_modal .modal_box {
+  position: fixed;
+  top: 120px;
+  width: 100%;
+}
+body #font_modal .modal_box .title {
+  margin-bottom: 60px;
+}
+body #font_modal .modal_box .title h1 {
+  font-size: 45px;
+}
+body #font_modal .modal_box .title p {
+  font-size: 18px;
+}
+body #font_modal .modal_box .select p {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  gap: 30px;
+}
+body #font_modal .modal_box .select p button {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  background-color: #FFC909;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+body #font_modal .modal_box .select p button#nomal {
+  font-size: 18px;
+}
+body #font_modal .modal_box .select p span {
+  text-align: left;
+}
+body #font_modal .modal_box .select p:first-child {
+  margin-bottom: 30px;
+}
+body #menu_modal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  display: none;
+}
+body #hammenu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 99;
+}
+body #hammenu header {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+body #hammenu header .head {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 150px;
+  background-color: #365988;
+}
+body #hammenu header .head .icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body #hammenu header .head .icon .logo {
+  width: 118px;
+}
+body #hammenu header .head .icon .close {
+  width: 20px;
+  margin-right: 15px;
+}
+body #hammenu #mypage {
+  position: relative;
+  width: 280px;
+  height: 125px;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.3);
+  z-index: 99;
+}
+body #hammenu #mypage .user {
+  color: #000;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 1.25em;
+  cursor: pointer;
+}
+body #hammenu #mypage .user span {
+  color: #000;
+}
+body #hammenu #mypage .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+body #hammenu #mypage .info a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #959595;
+  font-size: 0.8em;
+}
+body #hammenu #mypage .info a img {
+  width: 13px;
+}
+body #hammenu .menubox {
+  position: relative;
+  top: 50px;
+  width: 100%;
+  margin: 30px 0;
+}
+body #hammenu .menubox ul {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  gap: 15px;
+}
+body #hammenu .menubox ul li {
+  width: 40%;
+  height: 70px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+body #hammenu .menubox ul li a {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #000;
+  font-size: 0.85em;
+}
+body #hammenu .menubox ul li a img {
+  width: 20px;
+}
+body #hammenu .menubox ul li a img.size {
+  width: 25px;
+}
+body #hammenu .bottom_menu {
+  width: 95%;
+  margin: 80px auto 0;
+  border-top: 1px solid #000;
+  padding-top: 20px;
+}
+body #hammenu .bottom_menu ul {
+  width: 80%;
+  margin: 0 auto;
+}
+body #hammenu .bottom_menu ul li {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+body #hammenu .bottom_menu ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  font-size: 1.1em;
+}
+body section {
+  height: 100vh;
+  padding: 30% 0 20%;
+  display: flex;
+  align-items: center;
+}
+body section .slide_box {
+  width: 200px;
+  margin: 0 auto;
+}
+body section .slide_box div {
+  width: 250px;
+  margin-right: 30px;
+  position: relative;
+  perspective: 100px;
+}
+body section .slide_box div img {
+  width: 200px;
+}
+body section .slide_box div.font #cursor {
+  width: 20px;
+  height: 25px;
+  position: absolute;
+  top: 180px;
+  left: 110px;
+  z-index: 99;
+  -webkit-animation: cursorMove 3s ease-in-out 1s alternate;
+          animation: cursorMove 3s ease-in-out 1s alternate;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  transform: translateZ(10px);
+}
+body section .slide_box div.font #move {
+  width: 20px;
+  height: 25px;
+  position: absolute;
+  top: 180px;
+  left: 110px;
+  z-index: 99;
+  -webkit-animation: cursorMove2 3s ease-in-out alternate;
+          animation: cursorMove2 3s ease-in-out alternate;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  transform: translateZ(10px);
+}
+body section .slide_box div.font2 #red {
+  width: 30px;
+  height: 38px;
+  position: absolute;
+  top: 45px;
+  right: 55px;
+  -webkit-animation: click 2s ease-in-out alternate infinite;
+          animation: click 2s ease-in-out alternate infinite;
+}
+body section .slide_box .slick-dots {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body section .slide_box .slick-dots li {
+  display: inline-block;
+  margin-left: 10px;
+}
+body section .slide_box .slick-dots li button {
+  border: none;
+  background-color: #d9d9d9;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  outline: none;
+}
+body section .slide_box .slick-dots li.slick-active button {
+  background-color: #1c2f69;
+}
+body section .slide_box .slick-dots li:first-child {
+  margin-left: 0;
+}
+body section .desc {
+  width: 80%;
+  margin: 60px auto 0;
+  text-align: center;
+}
+body section .desc h3 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+body section .desc p {
+  font-size: 1em;
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s linear both;
+          animation: fadeIn 0.5s linear both;
+}
+body section.section2 #cursor2 {
+  width: 25px;
+  position: absolute;
+  bottom: 80px;
+  right: 50px;
+  transform: translateZ(10px);
+}
+body section.section2 #cursor2.move {
+  -webkit-animation: cursorMove3 2s ease-in-out 2s both;
+          animation: cursorMove3 2s ease-in-out 2s both;
+}
+body section.section2 .slide_box .slick-track div:nth-child(1) {
+  padding-bottom: 30px;
+}
+body section.section2 .slide_box .slick-dots {
+  bottom: -10px;
+}
+body section.section2 .desc {
+  margin-top: 30px;
+}/*# sourceMappingURL=guide.css.map */

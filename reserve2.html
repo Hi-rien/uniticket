@@ -1,0 +1,595 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Uniticket" />
+  <meta property="og:title" content="Uniticket" />
+  <meta property="og:description" content="모두가 하나 되는 쉬운 티켓팅" />
+  <meta property="og:image" content="./main_logo.png" />
+
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"
+    integrity="sha512-/AilQf/shuEGfh8c3DoIqcIqHZCKpiImSyt+fxIKJphHiNa6QMPb6AbDly6rkjmGr/5OZd35JtvVkbEKnCZO+A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reserve.css">
+  <script src="./js/jquery-1.11.2.min.js"></script>
+  <script defer src="./js/common.js"></script>
+  <script defer src="./js/reserve.js"></script>
+  <title>Uniticket</title>
+
+</head>
+
+<body>
+
+  
+  <header id="header">
+    <div class="inner">
+      <img class="arrow" src="./img/arrow-forward.png" alt="이전 페이지로 돌아가기">
+      <h2>예매진행</h2>
+      <img src="./img/hamburger_icon.png" alt="메뉴">
+    </div>
+  </header>
+
+
+  <div id="fullpage">
+
+    <div id="fp-nav">
+      <ul>
+        <li><a class="active"></a></li>
+        <li><a></a></li>
+        <li><a></a></li>
+        <li><a></a></li>
+        <li><a></a></li>
+      </ul>
+    </div>
+
+    <section id="section1" class="section">
+      <h3>1.날짜/회차 선택</h3>
+      <div class="info">
+        <img src="./img/poster/26_concert.gif" alt="불타는트롯맨콘서트">
+        <div class="desc">
+          <h4>불타는트롯맨 콘서트</h4>
+          <p>2023.06.10 - 2023.08.05</p>
+          <span>잔여석 | 75석(지정)</span>
+        </div>
+      </div>
+      <div class="date">
+        <h4>날짜선택</h4>
+        <ul class="first">
+          <li class="on"><span>일일</span></li>
+          <li><span>양일</span></li>
+        </ul>
+        <ul class="second">
+          <li class="on"><span>2023.08.05 (토)</span></li>
+          <li><span>2023.08.06 (일)</span></li>
+        </ul>
+      </div>
+      <div class="time">
+        <h4>시간</h4>
+        <ul>
+          <li><span>12:00</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="section2" class="section">
+      <h3>2.좌석/매수 선택</h3>
+      <div class="check">
+        <h4>좌석선택</h4>
+        <p class="pre">R석 / S석 / 일반석</p>
+        <p class="nex"><span>R2</span>석<span>1</span>매를 선택하셨습니다.</p>
+        <div class="button pre">선택하기</div>
+        <div class="button nex">변경하기</div>
+      </div>
+      <div class="number">
+        <h4>매수선택</h4>
+        <ul class="price">
+          <li>
+            <img src="./img/pat1.png" alt="기본가">
+            <span>99,000</span>
+          </li>
+          <li>
+            <img src="./img/pat2.png" alt="국민기초생활수급자">
+            <span>69,300</span>
+          </li>
+          <li>
+            <img src="./img/pat3.png" alt="장애인 및 국가유공자">
+            <span>69,300</span>
+          </li>
+        </ul>
+        <ul class="ticket">
+          <li>
+            <div class="left">
+              <img src="./img/pat1.png" alt="기본가">
+              <span>기본가</span>
+            </div>
+            <div class="right">
+              <img src="./img/minus_icon.png" class="minus minus1" value="99000"></img>
+              <p class="num">0</p>
+              <img src="./img/add_icon.png" class="plus plus1" value="99000"></img>
+            </div>
+          </li>
+          <li>
+            <div class="left">
+              <img src="./img/pat2.png" alt="국민기초생활수급자">
+              <span>국민기초생활수급자</span>
+              <span class="ab">*본인에 한함, 증빙자료 필참</span>
+            </div>
+            <div class="right">
+              <img src="./img/minus_icon.png" class="minus minus2" value="69,300"></img>
+              <p class="num">0</p>
+              <img src="./img/add_icon.png" class="plus plus2" value="69,300"></img>
+            </div>
+          </li>
+          <li>
+            <div class="left">
+              <img src="./img/pat3.png" alt="장애인 및 국가유공자">
+              <span>장애인 및 국가유공자</span>
+              <span class="ab">*본인에 한함, 증빙자료(복지카드, 유공자증) 필참</span>
+            </div>
+            <div class="right">
+              <img src="./img/minus_icon.png" class="minus minus3" value="69300"></img>
+              <p class="num">0</p>
+              <img src="./img/add_icon.png" class="plus plus3" value="69300"></img>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="total">
+        <h5>총 매수/결제금액</h5>
+        <p><span class="totalnum">0</span>매 / <span class="totalprice">0</span>원</p>
+      </div>
+
+      <div class="box modal">
+        <div class="width">
+          <div class="divide">
+            <h3>구역 선택</h3>
+            <img class="map" src="img/mappattern.png" alt="map">
+            <ul>
+              <li class="one">
+                <img src="img/seat1.jpg" alt="seat1">
+                <p>R석</p>
+                <p>잔여 <span>70</span>석</p>
+              </li>
+
+              <li class="two">
+                <img src="img/seat2.jpg" alt="seat2">
+                <p>S석</p>
+                <p>잔여 <span>130</span>석</p>
+              </li>
+
+              <li class="three">
+                <img src="img/seatpat3.png" alt="seat3">
+                <p>일반</p>
+                <p>잔여 <span>200</span>석</p>
+              </li>
+            </ul>
+
+            <button class="modal_button">희망하는 좌석 구역을 터치해주세요.</button>
+          </div>
+
+          <div class="divide2">
+            <div class="seat">
+              <h3>좌석 선택</h3>
+              <table>
+                <tr>
+                  <td>1열</td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+
+                </tr>
+
+                <tr>
+                  <td>2열</td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>3열</td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>4열</td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>5열</td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div class="can"></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                  <td>
+                    <div></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan="11">
+                    <ul class="colspan">
+                      <li>
+                        <div class></div>판매완료
+                      </li>
+                      <li>
+                        <div class="can"></div>예매가능
+                      </li>
+                    </ul>
+                  </td>
+
+                </tr>
+              </table>
+
+              <p class="explain">* 상단 화면 터치가 어려운 경우 하단 열/석란을 좌우로 움직여 희망 좌석을 선택해주세요.</p>
+
+              <div class="seat_indicator">
+                <ul>
+                  <li>구역</li>
+                  <li>R2</li>
+                </ul>
+
+                <ul>
+                  <li>열</li>
+                  <li>
+                    <div>
+                      <span>1</span>
+                      <span>2</span>
+                      <span>3</span>
+                      <span>4</span>
+                      <span class="only">5</span>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>석</li>
+                  <li>
+                    <div class="span2">
+                      <span>1</span>
+                      <span>2</span>
+                      <span>3</span>
+                      <span class="only">4</span>
+                      <span>5</span>
+                      <span>6</span>
+                      <span>7</span>
+                      <span>8</span>
+                      <span>9</span>
+                      <span>10</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="seat_result">
+                <ul>
+                  <li>선택좌석</li>
+                  <li class="seat_num">1</li>
+                </ul>
+
+                <ul>
+                  <li class="c2">C2구역/ 5열 / 4석</li>
+                </ul>
+              </div>
+
+
+              <button class="modal_button exit">선택완료</button>
+
+            </div>
+
+
+          </div>
+        </div>
+    </section>
+
+    <section id="section3" class="section">
+      <h3>3.쿠폰/할인 선택</h3>
+      <div class="coupon_box">
+        <h4>보유쿠폰</h4>
+        <div class="coupon">
+          <div class="type">
+            <p>수수료 할인 쿠폰</p>
+            <span>23.06.03 - 23.07.03</span>
+            <span>총 2,000원 할인</span>
+          </div>
+          <div class="use">
+            <span>쿠폰사용</sapn>
+          </div>
+        </div>
+      </div>
+      <div class="discount_box">
+        <ul>
+          <li class="main">
+            <span>티켓금액</span>
+            <p><span class="price">0</span>원</p>
+          </li>
+          <li>
+            <span>기본가</span>
+            <p><span class="base">0</span>원</p>
+          </li>
+          <li>
+            <span>가격할인</span>
+            <span class="discount" data-discount="22000">-22,000원</span>
+          </li>
+          <li>
+            <span>예매수수료</span>
+            <span>2,000원</span>
+          </li>
+          <li class="red">
+            <span>쿠폰할인</span>
+            <P><span class="discount">0</span>원</P>
+          </li>
+        </ul>
+      </div>
+      <div class="totalprice">
+        <span>총 매수/결제금액</span>
+        <p><span class="totalnum2"></span>매 / <span class="sumprice">0</span>원</p>
+      </div>
+
+    </section>
+    <section id="section4" class="section">
+      <h3>4.수령방법/주문자 정보 확인</h3>
+      <div class="user">
+        <h4>주문자 정보</h4>
+        <form name="userinfo">
+          <div class="first">
+            <div class="username">
+              <label for="name"><img src="./img/person_icon.png"></label>
+              <input type="text" name="name" value="유니티켓">
+            </div>
+            <div class="userhp">
+              <label for="hp"><img src="./img/hp_icon.png"></label>
+              <input type="text" name="hp" value="010-1234-1234">
+            </div>
+          </div>
+          <div class="email">
+            <label for="email"><img src="./img/email_icon.png"></label>
+            <input type="email" name="email" value="uniticket@uniworld.com">
+          </div>
+          <!-- <? include "info.php";?> -->
+          <div class="topagree">
+            <input type="checkbox" name="argee" id="agree" checked class="check">
+            <label for="agree">
+              <p>주문자 확인 및 예매 처리를 위해 휴대폰번호 및 이메일을 수집하며, 이용목적 달성 이후 파기합니다.</p>
+            </label>
+          </div>
+          <div class="agree2">
+            <h4>수령방법</h4>
+            <div class="title">
+              <img src="./img/tickets_icon.png">
+              <span>현장수령</span>
+            </div>
+            <div>
+              <input type="checkbox" name="allagree" id="allagree" class="check">
+              <label for="allagree">
+                <p>모두 확인하였습니다.</p>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" name="check1" class="check" id="check1">
+              <label for="check1">
+                <p>안내된 필참자료를 미지참한 할인티켓의 경우 현장에서 차액 지불을 진행해야 합니다.</p>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" name="check2" class="check" id="check2">
+              <label for="check2">
+                <p>현장수령 후 분실한 티켓의 경우 모든 책임은 사용자에게 있으며 필요의 경우 재구매를 진행해야 합니다.</p>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" name="check3" class="check" id="check3">
+              <label for="check3">
+                <p>결제정보를 확인할 수 없는 경우 현장수령이 불가합니다.</p>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="section5" class="section">
+      <h3>5.결제정보</h3>
+      <div class="top">
+        <h4>예매정보</h4>
+        <div>
+          <span>상품명</span>
+          <span>인천펜타포트 락 페스티벌</span>
+        </div>
+        <div>
+          <span>매수</span>
+          <span><span class="totalnum"></span>매</span>
+        </div>
+      </div>
+      <div class="bottom">
+        <h4>금액정보</h4>
+        <div>
+          <span>금액</span>
+          <span><span class="base"></span>원</span>
+        </div>
+        <div>
+          <span>예매수수료</span>
+          <span><span class="coupon"></span>원</span>
+        </div>
+        <div>
+          <span>배송료</span>
+          <span>0원</span>
+        </div>
+        <div>
+          <span>할인</span>
+          <span><span class="discount"></span>원</span>
+        </div>
+        <div class="total">
+          <span>총 결제 금액</span>
+          <span class="red"><span class="totalprice"></span>원</span>
+        </div>
+      </div>
+      <div class="radio">
+        <h4>결제수단</h4>
+        <form name="pay">
+          <label for="pay"><input type="radio" name="pay">신용카드</label>
+          <label for="pay"><input type="radio" name="pay">계좌이체</label>
+          <label for="pay"><input type="radio" name="pay" checked>무통장입금</label>
+        </form>
+      </div>
+    </section>
+  </div>
+
+
+  <footer>
+    <button class="prev">이전 단계</button>
+    <button class="next">다음 단계</button>
+  </footer>
+
+</body>
+
+</html>

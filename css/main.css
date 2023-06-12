@@ -1,0 +1,629 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+}
+body a {
+  color: #000;
+}
+body header {
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  z-index: 5;
+}
+body header .header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+body header .header h1 a {
+  display: block;
+}
+body header .header h1 a img {
+  width: 120px;
+}
+body .menu {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 10;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 0.75em;
+}
+body .menu a {
+  width: 80px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+body .menu a img {
+  width: 20px;
+}
+body .menu a:last-child img {
+  width: 15px;
+}
+body #menu_modal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9;
+  display: none;
+}
+body #hammenu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 99;
+}
+body #hammenu header {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+body #hammenu header .head {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background-color: #365988;
+}
+body #hammenu header .head .icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body #hammenu header .head .icon .logo {
+  width: 118px;
+}
+body #hammenu header .head .icon .close {
+  width: 20px;
+  margin-right: 15px;
+}
+body #hammenu #mypage {
+  position: relative;
+  top: -60px;
+  z-index: 5;
+  width: 280px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 125px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.3);
+}
+body #hammenu #mypage .user {
+  color: #000;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 1.25em;
+  cursor: pointer;
+}
+body #hammenu #mypage .user span {
+  color: #000;
+}
+body #hammenu #mypage .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+body #hammenu #mypage .info a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #959595;
+  font-size: 0.8em;
+}
+body #hammenu #mypage .info a img {
+  width: 13px;
+}
+body #hammenu .menubox {
+  margin: 0 0 30px;
+  position: relative;
+  top: -20px;
+}
+body #hammenu .menubox ul {
+  width: 100%;
+  justify-content: center;
+  gap: 15px;
+}
+body #hammenu .menubox ul li {
+  width: 40%;
+}
+body #hammenu .bottom_menu {
+  width: 95%;
+  margin: 0 auto;
+  border-top: 1px solid #000;
+  padding-top: 20px;
+}
+body #hammenu .bottom_menu ul {
+  width: 80%;
+  margin: 0 auto;
+}
+body #hammenu .bottom_menu ul li {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+body #hammenu .bottom_menu ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  font-size: 1.1em;
+}
+body #font_modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+body #font_modal .modal_box {
+  position: fixed;
+  top: 120px;
+  width: 100%;
+}
+body #font_modal .modal_box .title {
+  margin-bottom: 60px;
+}
+body #font_modal .modal_box .title h1 {
+  font-size: 45px;
+}
+body #font_modal .modal_box .title p {
+  font-size: 18px;
+}
+body #font_modal .modal_box .select p {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  gap: 30px;
+}
+body #font_modal .modal_box .select p button {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  background-color: #FFC909;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+body #font_modal .modal_box .select p button#nomal {
+  font-size: 18px;
+}
+body #font_modal .modal_box .select p span {
+  text-align: left;
+}
+body #font_modal .modal_box .select p:first-child {
+  margin-bottom: 30px;
+}
+body #main_poster {
+  width: 100%;
+  position: relative;
+}
+body #main_poster .back {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+body #main_poster .back img {
+  width: 100%;
+}
+body #main_poster ul .slick-list {
+  margin-bottom: 30px;
+}
+body #main_poster ul .slick-list .slick-track li {
+  height: 350px;
+  position: relative;
+  top: 80px;
+  margin: 0 25px;
+}
+body #main_poster ul .slick-list .slick-track li.slick-active a {
+  transform: scale(1.3);
+}
+body #main_poster ul .slick-list .slick-track li.slick-active a .poster {
+  opacity: 1;
+}
+body #main_poster ul .slick-list .slick-track li a {
+  display: block;
+  width: 200px;
+  height: 300px;
+  transition: all 0.5s;
+  background-color: #000;
+  border-radius: 120px 120px 0 0;
+}
+body #main_poster ul .slick-list .slick-track li a .poster {
+  width: 100%;
+  height: 100%;
+  border-radius: 120px 120px 0 0;
+  box-shadow: 2px -2px 8px rgba(0, 0, 0, 0.6);
+  opacity: 0.3;
+  transition: all 1.2s;
+}
+body #main_poster ul .slick-dots {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+body #main_poster ul .slick-dots li {
+  width: 50px;
+  height: 4px;
+  background-color: #d9d9d9;
+  transition: all 0.5s;
+}
+body #main_poster ul .slick-dots li.slick-active {
+  background-color: #1c2f69;
+}
+body #main_poster ul .slick-dots li button {
+  border: none;
+  background-color: transparent;
+  font-size: 0;
+}
+body #search {
+  width: 340px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  margin: 30px auto;
+}
+body #search form {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body #search form input {
+  border: none;
+  background-color: transparent;
+  margin-left: 20px;
+  outline: none;
+}
+body #search form input::-moz-placeholder {
+  font-weight: bold;
+  font-size: 1em;
+  color: #626262;
+}
+body #search form input:-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 1em;
+  color: #626262;
+}
+body #search form input::placeholder {
+  font-weight: bold;
+  font-size: 1em;
+  color: #626262;
+}
+body #search form button {
+  border: none;
+  background-color: transparent;
+  margin-right: 10px;
+}
+body #search form button img {
+  width: 20px;
+}
+body .menubox {
+  width: 100%;
+  margin: 30px 0;
+}
+body .menubox ul {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  gap: 15px;
+}
+body .menubox ul li {
+  width: 43%;
+  height: 70px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+body .menubox ul li a {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #000;
+  font-size: 0.85em;
+}
+body .menubox ul li a img {
+  width: 20px;
+}
+body .menubox ul li a img.size {
+  width: 25px;
+}
+body #guide {
+  width: 90%;
+  margin: 100px auto 0;
+}
+body #guide p {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+body #guide p .ticket {
+  width: 40px;
+}
+body #guide p span {
+  font-size: 1.35em;
+  font-weight: bold;
+  color: #626262;
+}
+body #guide p a {
+  display: block;
+  margin-left: 25px;
+}
+body #guide p a img {
+  height: 20px;
+  margin-top: 8px;
+}
+body #guide .grid_guide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 180px);
+  gap: 20px;
+}
+body #guide .grid_guide li {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+body #guide .grid_guide li:first-child {
+  grid-row: 1/3;
+}
+body #guide .grid_guide li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  color: #000;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+body #guide .grid_guide li a.on {
+  background-color: #1c2f69;
+  color: #fff;
+}
+body #guide .grid_guide li a img {
+  width: 120px;
+}
+body #guide .grid_guide li:nth-child(2) a img {
+  width: 80px;
+}
+body #guide .grid_guide li:nth-child(3) a {
+  line-height: 1;
+}
+body #guide .grid_guide li:nth-child(3) a img {
+  width: 70px;
+}
+body #guide .grid_guide li .yellow {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  background-color: #FFC909;
+}
+body .pointbanner {
+  width: 100%;
+  margin-top: 100px;
+}
+body .pointbanner .banner {
+  width: 100%;
+}
+body .tab_slide {
+  width: 100%;
+  margin: 100px 0;
+}
+body .tab_slide h2 {
+  margin-left: 5%;
+  font-size: 1.5em;
+}
+body .tab_slide .tab {
+  margin: 20px 0;
+}
+body .tab_slide .tab .slick-list {
+  padding-left: 5%;
+}
+body .tab_slide .tab .slick-list li {
+  margin: 0 5px;
+  width: auto;
+  display: inline-block;
+  height: 35px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+body .tab_slide .tab .slick-list li.on {
+  background-color: #1c2f69;
+  border: none;
+}
+body .tab_slide .tab .slick-list li.on a {
+  color: #fff;
+}
+body .tab_slide .tab .slick-list li a {
+  line-height: 35px;
+  display: block;
+  margin: 0 20px;
+  color: #000;
+}
+body .tab_slide .contents .box {
+  width: 100%;
+  padding-left: 20px;
+}
+body .tab_slide .contents .box li {
+  width: 320px;
+  height: 520px;
+  position: relative;
+  margin-right: 15px;
+}
+body .tab_slide .contents .box li .poster {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+}
+body .tab_slide .contents .box li .mini {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 30px 30px 0 0;
+  width: 300px;
+  height: 370px;
+  z-index: 1;
+}
+body .tab_slide .contents .box li .content_box {
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 220px;
+  background-color: #fff;
+  border: 2px solid #d9d9d9;
+  border-radius: 0 0 30px 30px;
+  z-index: 2;
+}
+body .tab_slide .contents .box li .content_box .title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 1.1em;
+  padding-bottom: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+body .tab_slide .contents .box li .content_box .title h4 {
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.25em;
+  border-bottom: 1px solid #d9d9d9;
+}
+body .tab_slide .contents .box li .content_box .title p {
+  text-align: left;
+  padding-left: 20px;
+}
+body .tab_slide .contents .box li .content_box .button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 260px;
+  height: 45px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  color: #666;
+  text-align: center;
+  line-height: 45px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+body .tab_slide#local .box li .rank {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 20px;
+}
+body .tab_slide#local .box li .rank img {
+  width: 45px;
+}
+body .tab_slide#local .box li .rank span {
+  display: block;
+  width: 40px;
+  height: 45px;
+  position: absolute;
+  line-height: 45px;
+  top: 0;
+  font-size: 2em;
+  font-family: "Roboto";
+  font-weight: bold;
+  text-align: center;
+}
+body .tab_slide#local .box li .content_box .red {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+  color: red;
+}
+body #footer {
+  width: 100%;
+  height: 150px;
+  margin: 100px 0 60px;
+  font-size: 0.65em;
+  text-align: center;
+  background-color: #eee;
+  padding-top: 20px;
+}
+body #footer p a {
+  color: #000;
+  font-weight: bold;
+  margin-right: 2px;
+}
+body #footer p a::after {
+  content: "|";
+  margin-left: 4px;
+}
+body #footer p a:last-child {
+  margin-right: 0;
+}
+body #footer p a:last-child::after {
+  content: "";
+  margin: 0;
+}
+body #footer p.copy {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}/*# sourceMappingURL=main.css.map */

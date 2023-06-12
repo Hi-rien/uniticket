@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Uniticket" />
+  <meta property="og:title" content="Uniticket" />
+  <meta property="og:description" content="모두가 하나 되는 쉬운 티켓팅" />
+  <meta property="og:image" content="./main_logo.png" />
+
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/guide.css">
+
+  <script src="./js/jquery-1.11.2.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script defer src="./js/common.js"></script>
+  <script defer src="./js/guide.js"></script>
+
+  <title>Uniticket</title>
+</head>
+<body>
+
+  <header>
+    <a href="./main.html"><img class="arrow" src="./img/arrow-forward.png" alt="이전버튼"></a>
+    <h2>이용가이드</h2>
+    <img src="./img/filter.png" alt="폰트" class="filter">
+  </header>
+
+  <nav class="nav">
+    <ul>
+      <li><a href="#section1">폰트설정</a></li>
+      <li><a href="#section2">쉬운 티켓팅</a></li>
+      <li><a href="#section3">패턴구분</a></li>
+    </ul>
+    <ul class="indicator">
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </nav>
+
+  <div id="font_modal">
+    <div class="modal_box">
+      <div class="title">
+        <h1>Uniticket</h1>
+        <p>희망하는 글자 크기를 선택해 주새요.</p>
+      </div>
+      <div class="select">
+        <p>
+          <button id="nomal">기본</button>
+          <span>폰트 및 간격이 기본모드로 보여집니다.</span>
+        </p>
+        <p>
+          <button id="big">크게</button>
+          <span>폰트 및 간격이 유니모드에 <br>맞춰 크고 넓게 보여집니다.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu">
+    <div class="hamburger">
+      <img src="./img/hamburger_icon.png" alt="햄버거아이콘">
+    </div>
+    <a href="./main.html" class="home">
+      <img src="./img/home_icon.png" alt="홈아이콘">
+    </a>
+    <div class="my">
+      <img src="./img/user_icon.png" alt="마이페이지아이콘">
+    </div>
+  </div>
+
+  <div id="menu_modal"></div>
+
+
+  <div id="hammenu">
+    <header>
+      <div class="head">
+        <div class="icon">
+          <img src="./img/header_logo.png" alt="logo" class="logo">
+          <img src="./img/close_icon.png" alt="close" class="close">  
+        </div>
+      </div>
+    </header>
+     <div id="mypage">
+      <? include "hammenu.php"; ?>
+    </div>
+    <div class="menubox">
+      <nav>
+        <ul>
+          <li>
+            <a href="./reserve.html">
+              <img class="size" src="./img/bk_local_icon.png" alt="지역행사/페스티벌">
+              <span>지역행사/페스티벌</span>
+            </a>
+          </li>
+          <li>
+            <a href="./reserve2.html">
+              <img src="./img/bk_concert_icon.png" alt="콘서트">
+              <span>콘서트</span>
+            </a>
+          </li>
+          <li>
+            <a href="./reserve2.html">
+              <img src="./img/bk_musical_icon.png" alt="뮤지컬/연극">
+              <span>뮤지컬/연극</span>
+            </a>
+          </li>
+          <li>
+            <a href="./reserve2.html">
+              <img class="size" src="./img/bk_exposition_icon.png" alt="전시/체험">
+              <span>전시/체험</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bottom_menu">
+      <ul>
+        <li>
+          <a href="javascript:void(0)">
+            <span>이용가이드</span>
+            <img src="./img/arrow_icon.png" alt="더보기">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <span>공지사항</span>
+            <img src="./img/arrow_icon.png" alt="더보기">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <span>자주 묻는 질문</span>
+            <img src="./img/arrow_icon.png" alt="더보기">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <span>문의하기</span>
+            <img src="./img/arrow_icon.png" alt="더보기">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <section id="section1" class="section">
+    <div class="center">
+      <div class="slide_box">
+        <div class="font">
+          <img src="./img/guide1-1.png" alt="폰트크기설정">
+          <img src="./img/hand_cursor_icon.png" id="cursor">
+        </div>
+        <div class="font2">
+          <img src="./img/guide1-2.png" alt="폰트크기설정">
+          <img src="./img/hand_cursor_red_icon.png"  id="red">
+        </div>
+      </div>
+  
+      <div class="desc">
+        <h3>나에게 맞는 폰트 적용하기</h3>
+        <div class="text">
+          <p>메인화면 입장 시 등장하는 폰트 선택 모달창 내에서 나에게 편한 폰트크기를 선택해주세요.
+            글씨크기가 전체적으로 변경됩니다.</p>
+          <p>어플 사용중 다시 폰트변화를 주고 싶다면 최상단에 위치한 인디케이터를 클릭하여 조절해주세요.</p>
+        </div>
+      </div>  
+    </div>
+  </section>
+
+  <section id="section2" class="section2">
+    <div class="center">
+      <div class="slide_box">
+        <div>
+          <img src="./img/guide2-1_1.png" alt="쉬운 티켓팅">
+          <img src="./img/hand_cursor_bk_icon.png" id="cursor2">
+        </div>
+        <div>
+          <img src="./img/guide2-1_2.png" alt="쉬운 티켓팅">
+        </div>
+      </div>
+  
+      <div class="desc">
+        <h3>한페이지 내에서 예매 완료</h3>
+        <div class="text">
+          <p>익숙한 방식을 추구하는 유니티켓에서는 결제창 이동 이전 모든 절차가 창 전환 없이 한페이지 내에서 이루어집니다.</p>
+          <p>예매페이지 최상단 아이콘을 통해 나의 위치 및 진행상황 확인이 바로 가능합니다.</p>
+        </div>
+      </div>  
+    </div>
+  </section>
+
+  <section id="section3" class="section">
+    <div class="center">
+      <div class="slide_box">
+        <div>
+          <img src="./img/guide3-1.png" alt="패턴구분">
+        </div>
+        <div>
+          <img src="./img/guide3-2.png" alt="패턴구분">
+        </div>
+      </div>
+  
+      <div class="desc">
+        <h3>모두에게 친절한 유니버설 컬러</h3>
+        <div class="text">
+          <p>디자인 사각지대에서 벗어나도록 'kcc선정 유니버설 컬러' 및 패턴들을 활용하여 모두에게 구분이 잘 되는  친절한 디자인을 했습니다.</p>
+        </div>
+      </div>  
+    </div>
+  </section>
+
+
+  
+</body>
+</html>

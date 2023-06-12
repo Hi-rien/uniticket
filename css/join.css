@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+}
+body header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+body header h2 {
+  background-color: #fff;
+  padding: 0 20px;
+  height: 80px;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999;
+}
+body header h2::after {
+  content: "";
+  width: 110px;
+  height: 1px;
+  background-color: #bdbdbd;
+}
+body header h2::before {
+  content: "";
+  width: 110px;
+  height: 1px;
+  background-color: #bdbdbd;
+}
+body #form_box1 {
+  padding-top: 100px;
+  height: 100vh;
+  width: 85%;
+  margin: 0 auto;
+}
+body #form_box1 .logo {
+  position: relative;
+  left: -20px;
+  z-index: -1;
+}
+body #form_box1 .logo img {
+  width: 118px;
+}
+body #form_box1 h3 {
+  font-size: 1.5em;
+}
+body #form_box1 p {
+  font-weight: bold;
+  font-size: 0.9em;
+  height: 50px;
+  line-height: 50px;
+}
+body #form_box1 form {
+  margin-top: 30px;
+}
+body #form_box1 form .all_agree {
+  width: 100%;
+  height: 40px;
+  background-color: #e8e8e8;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+body #form_box1 form .all_agree input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/check_icon.png");
+}
+body #form_box1 form .all_agree input:checked {
+  background-image: url("../img/checked_icon.png");
+}
+body #form_box1 form .agrees {
+  margin-top: 40px;
+}
+body #form_box1 form .agrees div {
+  position: relative;
+  padding-left: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body #form_box1 form .agrees div label {
+  width: 220px;
+  text-align: left;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+body #form_box1 form .agrees div img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+body #form_box1 form .agrees div input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/check_icon.png");
+}
+body #form_box1 form .agrees div input:checked {
+  background-image: url("../img/checked_icon.png");
+}
+body #form_box1 .agree_button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #ffcc00;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+body #form_box1 .agree_button span {
+  line-height: 60px;
+  font-size: 1em;
+  font-weight: bold;
+}
+body #form_box2 {
+  padding-top: 60px;
+  width: 85%;
+  margin: 0 auto 150px;
+}
+body #form_box2 form #checkId {
+  font-size: 0.75em;
+  margin-left: 10px;
+  color: #063370;
+  font-weight: bold;
+}
+body #form_box2 form #submit {
+  font-size: 1em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border: none;
+  color: #000;
+  background-color: #ffcc00;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  line-height: 60px;
+  display: none;
+  font-family: "Noto Sans KR", sans-serif;
+}
+body #form_box2 form #submit span {
+  font-size: 1em;
+  font-weight: bold;
+}
+body #form_box2 form .input {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body #form_box2 form .input label {
+  font-weight: bold;
+}
+body #form_box2 form .input input {
+  height: 35px;
+  border: none;
+  background-color: #e8e8e8;
+  border-radius: 5px;
+  padding-left: 20px;
+  outline: none;
+}
+body #form_box2 form .input .check_button {
+  display: flex;
+  justify-content: space-between;
+}
+body #form_box2 form .input .check_button input {
+  width: 210px;
+}
+body #form_box2 form .input .check_button .confirm {
+  width: 110px;
+  height: 35px;
+  background-color: #bcbcbc;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 0.9em;
+  cursor: pointer;
+}/*# sourceMappingURL=join.css.map */
