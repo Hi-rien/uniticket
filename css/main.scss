@@ -360,10 +360,11 @@ body {
         background-color: transparent;
         margin-left: 20px;
         outline: none;
+        font-size: 1em;
 
         &::placeholder {
           font-weight: bold;
-          font-size: 1em;
+          font-size: inherit;
           color: #626262;
         }
       }

@@ -8,31 +8,78 @@ body {
   overflow: hidden;
 }
 body header {
-  position: fixed;
-  top: 0;
   width: 100%;
-}
-body header h2 {
-  background-color: #fff;
-  padding: 0 20px;
   height: 80px;
-  font-size: 1.5em;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 9999;
+  padding: 0 25px;
+  position: fixed;
+  z-index: 20;
 }
-body header h2::after {
-  content: "";
-  width: 110px;
-  height: 1px;
-  background-color: #bdbdbd;
+body header h2 {
+  font-size: 1.3em;
+  color: #000;
 }
-body header h2::before {
-  content: "";
-  width: 110px;
-  height: 1px;
-  background-color: #bdbdbd;
+body header a {
+  display: block;
+}
+body header a .arrow {
+  width: 13px;
+  transform: rotate(180deg);
+}
+body #font_modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+body #font_modal .modal_box {
+  position: fixed;
+  top: 120px;
+  width: 100%;
+}
+body #font_modal .modal_box .title {
+  margin-bottom: 60px;
+}
+body #font_modal .modal_box .title h1 {
+  font-size: 45px;
+}
+body #font_modal .modal_box .title p {
+  font-size: 18px;
+}
+body #font_modal .modal_box .select p {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  gap: 30px;
+}
+body #font_modal .modal_box .select p button {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  background-color: #FFC909;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+body #font_modal .modal_box .select p button#nomal {
+  font-size: 18px;
+}
+body #font_modal .modal_box .select p span {
+  text-align: left;
+}
+body #font_modal .modal_box .select p:first-child {
+  margin-bottom: 30px;
 }
 body #form_box1 {
   padding-top: 100px;
@@ -133,9 +180,10 @@ body #form_box1 .agree_button span {
   font-weight: bold;
 }
 body #form_box2 {
-  padding-top: 60px;
+  padding-top: 100px;
   width: 85%;
-  margin: 0 auto 150px;
+  margin: 0 auto 100px;
+  overflow: auto;
 }
 body #form_box2 form #checkId {
   font-size: 0.75em;
@@ -179,16 +227,26 @@ body #form_box2 form .input input {
   border-radius: 5px;
   padding-left: 20px;
   outline: none;
+  font-size: 1em;
+}
+body #form_box2 form .input input::-moz-placeholder {
+  font-size: inherit;
+}
+body #form_box2 form .input input:-ms-input-placeholder {
+  font-size: inherit;
+}
+body #form_box2 form .input input::placeholder {
+  font-size: inherit;
 }
 body #form_box2 form .input .check_button {
   display: flex;
   justify-content: space-between;
 }
 body #form_box2 form .input .check_button input {
-  width: 210px;
+  width: 60%;
 }
 body #form_box2 form .input .check_button .confirm {
-  width: 110px;
+  width: 30%;
   height: 35px;
   background-color: #bcbcbc;
   border-radius: 5px;

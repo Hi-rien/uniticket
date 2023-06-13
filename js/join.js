@@ -15,7 +15,7 @@ $('.agrees .check').click(function() {
 $('.agree_button').click(function() {
   if($('#agree1').is(':checked') && $('#agree2').is(':checked') && $('#agree3').is(':checked')) {
     $(this).stop().hide()
-    nextSec = $(this).parent().next().offset().top - 50
+    nextSec = $(this).parent().next().offset().top
     $('html, body').animate({
       scrollTop: nextSec
     }, 500)

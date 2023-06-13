@@ -14,6 +14,8 @@ body {
     height: 50px;
     position: fixed;
     top: 0;
+    z-index: 99;
+    background-color: #fff;
 
     .inner {
       width: 90%;
@@ -170,7 +172,7 @@ body {
 
       .info {
         display: flex;
-        margin: 40px 0;
+        margin: 8% 0;
         gap: 30px;
 
         img {
@@ -197,7 +199,7 @@ body {
       .date {
         ul {
           display: flex;
-          margin: 20px 0;
+          margin: 5% 0;
           gap: 30px;
 
           li {
@@ -248,7 +250,7 @@ body {
       margin: 0 auto;
 
       .check {
-        margin: 20px 0;
+        margin: 8% 0;
         position: relative;
         p {
           margin-top: 10px;
@@ -309,12 +311,7 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 70px;
-
-            &:first-child {
-              height: 60px;
-            }
-
+            height: 60px;
             img {
               width: 20px;
             }
@@ -356,7 +353,7 @@ body {
       }
 
       .total {
-        margin-top: 30px;
+        margin-top: 6%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -386,7 +383,10 @@ body {
 
         .width {
           width: 90%;
-          margin: 30px auto;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
           text-align: center;
           color: #fff;
 
@@ -407,7 +407,6 @@ body {
             font-size: 1.4em;
           }
           .divide {
-            margin-top: 100px;
             img {
               width: 100%;
             }
@@ -442,16 +441,17 @@ body {
             .seat {
               margin: 30px 0;
               table {
+                margin: 0 auto;
                 tr {
                   td {
-                    padding: 5px;
+                    padding: 3px;
                     font-size: .85em;
                     &:nth-child(2) {
                       padding-left: 20px;
                     }
                     div {
-                      width: 18px;
-                      height: 18px;
+                      width: 16px;
+                      height: 16px;
                       border: none;
                       cursor: pointer;
                       background-color: #b1b1b1;
@@ -489,8 +489,8 @@ body {
                 color: #ffcc00;
               }
               .seat_indicator {
-                margin: 30px 0 0 10px;
-                padding: 15px 0;
+                margin: 30px auto 0;
+                padding: 15px 20px;
                 border-bottom: 1px solid #fff;
                 border-top: 1px solid #fff;
                 font-size: 1.1em;
@@ -504,7 +504,7 @@ body {
                       width: 80%;
                     }
                     div {
-                      width: 70%;
+                      width: 65%;
                       height: 35px;
                       background-color: rgba(255, 255, 255, .5);
                       border-radius: 20px;
@@ -675,7 +675,7 @@ body {
       margin: 0 auto;
 
       .user {
-        margin-top: 20px;
+        margin-top: 5%;
 
         form {
           .first {
@@ -739,11 +739,11 @@ body {
 
             .title {
               display: flex;
-              height: 50px;
+              height: 40px;
               align-items: center;
               gap: 15px;
               font-size: .9em;
-              margin-bottom: 20px;
+              margin: 4% 0;
 
               img {
                 width: 30px;
@@ -797,7 +797,7 @@ body {
       }
 
       .top {
-        margin-top: 20px;
+        margin-top: 7%;
 
         div {
           display: flex;
@@ -814,7 +814,7 @@ body {
       }
 
       .bottom {
-        margin-top: 50px;
+        margin-top: 10%;
 
         div {
           display: flex;
@@ -841,7 +841,7 @@ body {
       }
 
       .radio {
-        margin-top: 50px;
+        margin-top: 13%;
 
         form {
           display: flex;

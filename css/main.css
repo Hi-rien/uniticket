@@ -311,20 +311,21 @@ body #search form input {
   background-color: transparent;
   margin-left: 20px;
   outline: none;
+  font-size: 1em;
 }
 body #search form input::-moz-placeholder {
   font-weight: bold;
-  font-size: 1em;
+  font-size: inherit;
   color: #626262;
 }
 body #search form input:-ms-input-placeholder {
   font-weight: bold;
-  font-size: 1em;
+  font-size: inherit;
   color: #626262;
 }
 body #search form input::placeholder {
   font-weight: bold;
-  font-size: 1em;
+  font-size: inherit;
   color: #626262;
 }
 body #search form button {

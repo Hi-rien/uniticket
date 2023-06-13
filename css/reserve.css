@@ -14,6 +14,8 @@ body #header {
   height: 50px;
   position: fixed;
   top: 0;
+  z-index: 99;
+  background-color: #fff;
 }
 body #header .inner {
   width: 90%;
@@ -144,7 +146,7 @@ body #fullpage #section1 li.on {
 }
 body #fullpage #section1 .info {
   display: flex;
-  margin: 40px 0;
+  margin: 8% 0;
   gap: 30px;
 }
 body #fullpage #section1 .info img {
@@ -165,7 +167,7 @@ body #fullpage #section1 .info .desc span {
 }
 body #fullpage #section1 .date ul {
   display: flex;
-  margin: 20px 0;
+  margin: 5% 0;
   gap: 30px;
 }
 body #fullpage #section1 .date ul li {
@@ -203,7 +205,7 @@ body #fullpage #section2 {
   margin: 0 auto;
 }
 body #fullpage #section2 .check {
-  margin: 20px 0;
+  margin: 8% 0;
   position: relative;
 }
 body #fullpage #section2 .check p {
@@ -261,9 +263,6 @@ body #fullpage #section2 .number .ticket li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
-}
-body #fullpage #section2 .number .ticket li:first-child {
   height: 60px;
 }
 body #fullpage #section2 .number .ticket li img {
@@ -298,7 +297,7 @@ body #fullpage #section2 .number .ticket li .right img {
   height: 20px;
 }
 body #fullpage #section2 .total {
-  margin-top: 30px;
+  margin-top: 6%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -324,7 +323,10 @@ body #fullpage #section2 .box {
 }
 body #fullpage #section2 .box .width {
   width: 90%;
-  margin: 30px auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
 }
@@ -343,9 +345,6 @@ body #fullpage #section2 .box .width .modal_button {
 body #fullpage #section2 .box .width h3 {
   margin: 20px 0;
   font-size: 1.4em;
-}
-body #fullpage #section2 .box .width .divide {
-  margin-top: 100px;
 }
 body #fullpage #section2 .box .width .divide img {
   width: 100%;
@@ -378,16 +377,19 @@ body #fullpage #section2 .box .width .divide2 {
 body #fullpage #section2 .box .width .divide2 .seat {
   margin: 30px 0;
 }
+body #fullpage #section2 .box .width .divide2 .seat table {
+  margin: 0 auto;
+}
 body #fullpage #section2 .box .width .divide2 .seat table tr td {
-  padding: 5px;
+  padding: 3px;
   font-size: 0.85em;
 }
 body #fullpage #section2 .box .width .divide2 .seat table tr td:nth-child(2) {
   padding-left: 20px;
 }
 body #fullpage #section2 .box .width .divide2 .seat table tr td div {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   border: none;
   cursor: pointer;
   background-color: #b1b1b1;
@@ -421,8 +423,8 @@ body #fullpage #section2 .box .width .divide2 .seat .explain {
   color: #ffcc00;
 }
 body #fullpage #section2 .box .width .divide2 .seat .seat_indicator {
-  margin: 30px 0 0 10px;
-  padding: 15px 0;
+  margin: 30px auto 0;
+  padding: 15px 20px;
   border-bottom: 1px solid #fff;
   border-top: 1px solid #fff;
   font-size: 1.1em;
@@ -439,7 +441,7 @@ body #fullpage #section2 .box .width .divide2 .seat .seat_indicator ul li:nth-ch
   width: 80%;
 }
 body #fullpage #section2 .box .width .divide2 .seat .seat_indicator ul li div {
-  width: 70%;
+  width: 65%;
   height: 35px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
@@ -576,7 +578,7 @@ body #fullpage #section4 {
   margin: 0 auto;
 }
 body #fullpage #section4 .user {
-  margin-top: 20px;
+  margin-top: 5%;
 }
 body #fullpage #section4 .user form .first {
   display: flex;
@@ -629,11 +631,11 @@ body #fullpage #section4 .user form .agree2 {
 }
 body #fullpage #section4 .user form .agree2 .title {
   display: flex;
-  height: 50px;
+  height: 40px;
   align-items: center;
   gap: 15px;
   font-size: 0.9em;
-  margin-bottom: 20px;
+  margin: 4% 0;
 }
 body #fullpage #section4 .user form .agree2 .title img {
   width: 30px;
@@ -677,7 +679,7 @@ body #fullpage #section5 div {
   font-size: 0.9em;
 }
 body #fullpage #section5 .top {
-  margin-top: 20px;
+  margin-top: 7%;
 }
 body #fullpage #section5 .top div {
   display: flex;
@@ -690,7 +692,7 @@ body #fullpage #section5 .top div span:nth-child(1) {
   width: 120px;
 }
 body #fullpage #section5 .bottom {
-  margin-top: 50px;
+  margin-top: 10%;
 }
 body #fullpage #section5 .bottom div {
   display: flex;
@@ -711,7 +713,7 @@ body #fullpage #section5 .bottom div:last-child .red {
   color: #de0f0f;
 }
 body #fullpage #section5 .radio {
-  margin-top: 50px;
+  margin-top: 13%;
 }
 body #fullpage #section5 .radio form {
   display: flex;

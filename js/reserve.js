@@ -35,7 +35,11 @@ $('button.next').click(function() {
     $('#fp-nav ul li').eq(num).trigger('click')
   }
 
+  if(num > 3) {
+    
+  }
 
+  console.log(num)
 })
 
 $('button.prev').click(function() {

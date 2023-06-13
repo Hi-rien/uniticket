@@ -8,30 +8,81 @@ body {
   overflow: hidden;
 
   header {
-    position: fixed;
-    top: 0;
     width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    position: fixed;
+    z-index: 20;
     h2 {
-      background-color: #fff;
-      padding: 0 20px;
-      height: 80px;
-      font-size: 1.5em;
-      display: flex;
-      align-items: center; 
-      justify-content: space-between; 
-      z-index: 9999;
-      &::after {
-        content: '';
-        width: 110px;
-        height: 1px;
-        background-color: #bdbdbd;
+      font-size: 1.3em;
+      color: #000;
+    }
+    a {
+      display: block;
+      .arrow {
+        width: 13px;
+        transform: rotate(180deg);
+      }  
+    }
+  }
+
+  #font_modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    color: #fff;
+    display: none;
+    .modal_box {
+      position: fixed;
+      top: 120px;
+      width: 100%;
+      .title {
+        margin-bottom: 60px;
+        h1 {
+          font-size: 45px;
+        }
+        p {
+          font-size: 18px;
+        }
       }
-      &::before {
-        content: '';
-        width: 110px;
-        height: 1px;
-        background-color: #bdbdbd;
+      .select {
+        p {
+          display: flex;
+          align-items: center;  
+          padding: 0 30px;
+          gap: 30px;      
+          button {
+            width: 120px;
+            height: 120px;
+            flex-shrink: 0;
+            border-radius: 30px;
+            border: none;
+            background-color: transparent;
+            background-color: #FFC909;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            cursor: pointer;
+            &#nomal {
+              font-size: 18px;
+            }
+          }
+          span {
+            text-align: left;
+          }
+          &:first-child {
+            margin-bottom: 30px;
+          }
+        }
       }
+
     }
   }
 
@@ -131,10 +182,10 @@ body {
   }
 
   #form_box2 {
-    padding-top: 60px;
+    padding-top: 100px;
     width: 85%;
-    margin: 0 auto 150px;
-    
+    margin: 0 auto 100px;
+    overflow: auto;
     form {
       #checkId {
         font-size: .75em;
@@ -168,6 +219,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 10px;
+
         label {
           font-weight: bold;
         }
@@ -178,16 +230,20 @@ body {
           border-radius: 5px;
           padding-left: 20px;
           outline: none;
+          font-size: 1em;
+          &::placeholder {
+            font-size: inherit;
+          }
         }
         .check_button {
           display: flex;
           justify-content: space-between;
 
           input {
-            width: 210px;
+            width: 60%;
           }
           .confirm {
-            width: 110px;
+            width: 30%;
             height: 35px;
             background-color: #bcbcbc;
             border-radius: 5px;

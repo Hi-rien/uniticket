@@ -6,7 +6,7 @@ $('#nomal').click(function() {
   localStorage.setItem('fontsize', 'nomal')
 
   $('body').css({
-    "font-size": "12px"
+    "font-size": "13px"
   })
 });
 
@@ -22,7 +22,7 @@ $('#big').click(function() {
 
 if(localStorage.getItem('fontsize') == 'nomal') {
   $('body').css({
-    "font-size": "12px"
+    "font-size": "13px"
   })
 }
 
