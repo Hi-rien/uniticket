@@ -5,32 +5,34 @@ if(localStorage.getItem('fontsize')) {
   $('#font_modal').stop().show()
 }
 
-// 메인 포스터 배경
-let activeBn
-
-function changeBn() {
-  setInterval(function() {
-    activeBn = $('#main_poster ul .slick-active').find('img').attr('data-back')
-    $('#main_poster .back img').attr('src', activeBn)
-  })
-}
-
-changeBn()
-
-
-
-// 메인 포스터 slick
-
+// 메인 포스터 
 $('#main_poster ul').slick({
   dots: true,
+  speed: 1000,
   autoplay: true,
   autoplaySpeed: 5000,
-  speed: 1000,
   infinite: true,
+  slidesToScroll: 1,
   arrows: false,
-  centerMode: true,
+  pauseOnHover: true,
   variableWidth: true,
+  centerMode: true,
 })
+
+setInterval(function() {
+  background = $('#main_slide .slick-list .slick-active').data('back')
+
+  $('#main_poster .background').css({
+    backgroundColor : background
+  })
+},500)
+
+setInterval(function() {
+  num =  $('#main_poster .slick-dots .slick-active').index() + 1
+  $('.dots_text').text('0'+num)
+},500)
+
+
 
 // 지역행사 & 추천행사 slick
 
@@ -40,11 +42,18 @@ $('.tab_slide .tab').slick({
   infinite: false
 })
 
-$('.tab_slide .box ul').slick({
+$('#monthly .box ul').slick({
   arrows: false,
   variableWidth: true,
+  slidesToShow: 2,
 })
 
+$('#guide .guide_slick').slick({
+  arrows: false,
+  variableWidth: true,
+  infinite: false,
+  slidesToShow: 2,
+})
 
 // 지역행사 & 추천행사 tab
 
@@ -71,21 +80,21 @@ $('.tab_slide .tab li').click(function() {
 
 // 지역행사 랭킹 스티커
 
-  $('#local .box li').each(function() {
-    $(this).prepend("<div class='rank'></div>")
-    $(this).find('.rank').prepend("<img src='./img/rank_icon.png'>")
-    $(this).find('.rank').prepend('<span></span>')
+  // $('#local .box li').each(function() {
+  //   $(this).prepend("<div class='rank'></div>")
+  //   $(this).find('.rank').prepend("<img src='./img/rank_icon.png'>")
+  //   $(this).find('.rank').prepend('<span></span>')
 
-    num = $(this).find('.poster').attr('alt')
+  //   num = $(this).find('.poster').attr('alt')
 
-    $(this).find('.rank span').text(num)
+  //   $(this).find('.rank span').text(num)
     
-  })
+  // })
 
 
-  $('#local .box li').each(function() {
-    $(this).find('.content_box').append("<a class='button' href='javascript:void(0)'>바로가기</a>")
-  })
+  // $('#local .box li').each(function() {
+  //   $(this).find('.content_box').append("<a class='button' href='javascript:void(0)'>바로가기</a>")
+  // })
 
   
   // guide click

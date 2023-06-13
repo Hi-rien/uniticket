@@ -156,41 +156,20 @@
   </div>
 
   <section id="main_poster">
-    <div class="back">
-      <img src="./img/main/main_back1.jpg" alt="">
-    </div>
-    <ul>
-      <li>
-        <a href="javascript:void(0)">
-          <img src="./img/main/main1.png" data-back="./img/main/main_back1.jpg" alt="시간을건너는집" class="poster">
-        </a>
-      </li>
-      <li>
-        <a href="javascript:void(0)">
-          <img src="./img/main/main2.png" data-back="./img/main/main_back2.png" alt="오르간과합창음악" class="poster">
-        </a>
-      </li>
-      <li>
-        <a href="javascript:void(0)">
-          <img src="./img/main/main3.png" data-back="./img/main/main_back3.png" alt="화성뱃놀이축제" class="poster">
-        </a>
-      </li>
-      <li>
-        <a href="javascript:void(0)">
-          <img src="./img/main/main4.png" data-back="./img/main/main_back4.png" alt="레드북" class="poster">
-        </a>
-      </li>
-      <li>
-        <a href="javascript:void(0)">
-          <img src="./img/main/main5.png" data-back="./img/main/main_back5.png" alt="달빛기행" class="poster">
-        </a>
-      </li>
-      <li>
-        <a href="javascript:void(0)">
-          <img src="./img/main/main6.png" data-back="./img/main/main_back6.png" alt="이지혜클래식콘서트" class="poster">
-        </a>
-      </li>
+    <div class="background"></div>
+    <ul id="main_slide">
+      <li data-back="#DCE4C4"><a href="./sub.html"><img src="./img/main/main1.png" alt="시간을 건너는 집"></a></li>
+      <li data-back="#C0D1EA"><a href="./sub.html"><img src="./img/main/main2.png" alt="오르간과 합창음악"></a></li>
+      <li data-back="#F9DBEA"><a href="./sub.html"><img src="./img/main/main3.png" alt="화성 뱃놀이 축제"></a></li>
+      <li data-back="#E7BCBC"><a href="./sub.html"><img src="./img/main/main4.png" alt="레드북"></a></li>
+      <li data-back="#FFFACF"><a href="./sub.html"><img src="./img/main/main5.png" alt="창덕궁 달빛기행"></a></li>
+      <li data-back="#FFEFCF"><a href="./sub.html"><img src="./img/main/main6.png" alt="이지혜 클래식 콘서트"></a></li>
     </ul>
+
+    <div class="number">
+      <span class="dots_text"></span>
+      <span class="total">06</span>
+    </div>
   </section>
 
   <div id="search">
@@ -231,42 +210,14 @@
     </nav>
   </section>
 
-  <section id="guide">
-    <h2>티켓팅 이용 가이드</h2>
-    <p>
-      <img class="ticket" src="./img/tickets_icon.png" alt="티켓">
-      <span>티켓팅이 어려우신가요?</span>
-      <a href="./guide.html"><img src="img/arrow-forward.png" alt="더보기"></a>
-    </p>
-    <ul class="grid_guide">
-      <li>
-        <a href="./guide.html">
-          <span>유니티켓<br>이용가이드</span>
-          <img src="./img/guide1.png" alt="guide">
-        </a>
-        <div class="yellow"></div>
-      </li>
-      <li>
-        <a href="./guide.html">
-          <span>티켓팅<br>사전준비</span>
-          <img src="./img/guide2.png" alt="guide">
-        </a>
-      </li>
-      <li>
-        <a href="./guide.html">
-          <span>티켓교환<br>&<br>환불정책</span>
-          <img src="./img/guide3.png" alt="guide">
-        </a>
-      </li>
-    </ul>
+  <section class="pointbanner">
+    <img src="./img/banner1.png" alt="가정의달 맞이 11,000원 할인 혜택" class="banner">
   </section>
 
-  <section class="pointbanner">
-    <img src="./img/eventbn1.png" alt="가정의달 맞이 11,000원 할인 혜택" class="banner">
-  </section>
+
 
   <section id="monthly" class="tab_slide">
-    <h2>이달의 추천행사</h2>
+    <h2><a href="./sub.html">이달의 추천행사 <img src="./img/arrow-forward.png" alt=""></a></h2>
     <ul class="tab">
       <li class="on"><a href="javascript:void(0)">지역행사/페스티벌</a></li>
       <li><a href="javascript:void(0)">콘서트</a></li>
@@ -282,11 +233,9 @@
             <img src="./img/ranking/1_local_1.jpg" alt="" class="poster">
             <div class="content_box">
               <div class="title">
-                <h4>메가필드 뮤직 페스티벌 2023</h4>
-                <p>기간 | 2023.06.17 - 2023.06.18</p>
-                <p>서울 | 서울 난지 한강공원</p>
+                <h4>메가필드 뮤직 페스티벌</h4>
+                <p>2023.06.17 ~ 2023.06.18</p>
               </div>
-              <a class="button" href="javascript:void(0)">바로가기</a>
             </div>
           </li>
           <li>
@@ -294,10 +243,8 @@
             <div class="content_box">
               <div class="title">
                 <h4>워터밤 서울</h4>
-                <p>기간 | 2023.06.23-2023.06.25</p>
-                <p>서울 | 잠실 종합운동장 보조경기장</p>
+                <p>2023.06.23 ~ 2023.06.25</p>
               </div>
-              <a class="button" href="javascript:void(0)">바로가기</a>
             </div>
           </li>
           <li>
@@ -305,10 +252,8 @@
             <div class="content_box">
               <div class="title">
                 <h4>월드 디제이 페스티벌</h4>
-                <p>기간 | 2023.06.02~2023.06.04</p>
-                <p>서울 | 서울랜드</p>
+                <p>023.06.02 ~ 2023.06.04</p>
               </div>
-              <a class="button" href="javascript:void(0)">바로가기</a>
             </div>
           </li>
           <li>
@@ -316,10 +261,8 @@
             <div class="content_box">
               <div class="title">
                 <h4>서울 파크 뮤직 페스티벌</h4>
-                <p>기간 | 2023.06.24~2023.06.25</p>
-                <p>서울 | 올림픽공원 88잔디마당</p>
+                <p>2023.06.24 ~ 2023.06.25</p>
               </div>
-              <a class="button" href="javascript:void(0)">바로가기</a>
             </div>
           </li>
         </ul>
@@ -332,21 +275,17 @@
             <div class="content_box">
               <div class="title">
                 <h4>서울 코미디 클럽</h4>
-                <p>기간 | 2023.01.01 ~ 오픈런</p>
-                <p>서울 | 서울 코미디 클럽</p>
+                <p>2023.01.01 ~ 오픈런</p>
               </div>
-              <a class="button" href="javascript:void(0)">바로가기</a>
             </div>
           </li>
           <li>
             <img src="./img/ranking/1_concert_2.gif" alt="" class="poster">
             <div class="content_box">
               <div class="title">
-                <h4>불타는 트롯맨 - 전국투어 콘서트</h4>
-                <p>기간 | 2023.06.10</p>
-                <p>대전 | DCC 대전컨벤션센터 제2전시장</p>
+                <h4>불타는 트롯맨</h4>
+                <p>2023.06.10</p>
               </div>
-              <a class="button" href="javascript:void(0)">바로가기</a>
             </div>
           </li>
           <li>
@@ -354,21 +293,17 @@
             <div class="content_box">
               <div class="title">
                 <h4>이승철 전국투어 콘서트</h4>
-                <p>기간 | 2023.06.17</p>
-                <p>창원 | 성산아트홀</p>
+                <p>2023.06.17</p>
               </div>
-              <a class="button" href="javascript:void(0)">바로가기</a>
             </div>
           </li>
           <li>
             <img src="./img/ranking/1_concert_4.jpg" alt="" class="poster">
             <div class="content_box">
               <div class="title">
-                <h4>마마무 월드 투어 MY CON</h4>
-                <p>기간 | 2023.06.16-2023.06.18</p>
-                <p>서울 | 올림픽공원 SK핸드볼경기장</p>
+                <h4>마마무 MY CON</h4>
+                <p>2023.06.16 ~ 2023.06.18</p>
               </div>
-              <a class="button" href="javascript:void(0)">바로가기</a>
             </div>
           </li>
         </ul>
@@ -381,10 +316,8 @@
             <div class="content_box">
               <div class="title">
                 <h4>데스노트</h4>
-                <p>기간 | 2023.03.28 - 2023.06.18</p>
-                <p>서울 | 샤롯데씨어터</p>
-              </div>
-              <a class="button" href="javascript:void(0)">바로가기</a>
+                <p>2023.03.28 ~ 2023.06.18</p>
+             </div>
             </div>
           </li>
           <li>
@@ -392,10 +325,8 @@
             <div class="content_box">
               <div class="title">
                 <h4>트레이스 유</h4>
-                <p>기간 | 2023.05.11 - 2023.08.20</p>
-                <p>서울 | 링크아트센터 벅스홀</p>
+                <p>2023.05.11 ~ 2023.08.20</p>
               </div>
-              <a class="button" href="javascript:void(0)">바로가기</a>
             </div>
           </li>
           <li>
@@ -403,10 +334,8 @@
             <div class="content_box">
               <div class="title">
                 <h4>비스티</h4>
-                <p>기간 | 2023.05.16 - 2023.08.13</p>
-                <p>서울 | 링크아트센터 페이코홀</p>
+                <p>2023.05.16 ~ 2023.08.13</p>
               </div>
-              <a class="button" href="javascript:void(0)">바로가기</a>
             </div>
           </li>
           <li>
@@ -414,10 +343,8 @@
             <div class="content_box">
               <div class="title">
                 <h4>해적</h4>
-                <p>기간 | 2023.03.07 - 2023.06.11</p>
-                <p>서울 | 서경대학교 공연예술센터</p>
+                <p>2023.03.07 ~ 2023.06.11</p>
               </div>
-              <a class="button" href="javascript:void(0)">바로가기</a>
             </div>
           </li>
         </ul>
@@ -430,43 +357,35 @@
             <div class="content_box">
               <div class="title">
                 <h4>화성 뱃놀이 축제</h4>
-                <p>기간 | 2023.06.09 - 2023.06.11</p>
-                <p>화성 | 서신면 전곡항 일대</p>
+                <p>2023.06.09 ~ 2023.06.11</p>
               </div>
-              <a class="button" href="javascript:void(0)">바로가기</a>
             </div>
           </li>
           <li>
             <img src="./img/ranking/1_exhibition_2.jpg" alt="" class="poster">
             <div class="content_box">
               <div class="title">
-                <h4>2023년 경복궁 생과방</h4>
-                <p>기간 | 2023.04.20 - 2023.06.28</p>
-                <p>서울 | 경복궁 생과방</p>
+                <h4>경복궁 생과방</h4>
+                <p>2023.04.20 ~ 2023.06.28</p>
               </div>
-              <a class="button" href="javascript:void(0)">바로가기</a>
             </div>
           </li>
           <li>
             <img src="./img/ranking/1_exhibition_3.jpg" alt="" class="poster">
             <div class="content_box">
               <div class="title">
-                <h4>제20회 대구펫쇼</h4>
-                <p>기간 | 2023.06.09 - 2023.06.11</p>
-                <p>대구 | 엑스코 1층 4,5홀</p>
+                <h4>대구펫쇼</h4>
+                <p>2023.06.09 ~ 2023.06.11</p>
               </div>
-              <a class="button" href="javascript:void(0)">바로가기</a>
             </div>
           </li>
           <li>
             <img src="./img/ranking/1_exhibition_4.jpg" alt="" class="poster">
             <div class="content_box">
               <div class="title">
-                <h4>2023년 창덕궁 달빛기행</h4>
-                <p>기간 | 2023.04.13 - 2023.06.04</p>
-                <p>서울 | 창덕궁 </p>
+                <h4>창덕궁 달빛기행</h4>
+                <p>2023.04.13 ~ 2023.06.04</p>
               </div>
-              <a class="button" href="javascript:void(0)">바로가기</a>
             </div>
           </li>
         </ul>
@@ -474,8 +393,33 @@
     </ul>
   </section>
 
+  <section id="guide">
+    <h2><a href="./guide.html">티켓팅 이용 가이드<img src="./img/arrow-forward.png" alt=""></a></h2>
+
+    <ul class="guide_slick">
+      <li>
+        <a href="./guide.html">
+          <img src="./img/guide1.png" alt="이용가이드">
+          <span>이용가이드</span>
+        </a>
+      </li>
+      <li>
+        <a href="./guide.html">
+          <img src="./img/guide3.png" alt="사전준비">
+          <span>사전준비</span>
+        </a>
+      </li>
+      <li>
+        <a href="./guide.html">
+          <img src="./img/guide2.png" alt="환불정책">
+          <span>환불정책</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
   <section id="local" class="tab_slide">
-    <h2>우리 지역 행사랭킹</h2>
+    <h2><a href="./sub.html">우리 지역 행사랭킹<img src="./img/arrow-forward.png" alt=""></a></h2>
     <ul class="tab">
       <li class="on"><a href="javascript:void(0)">서울</a></li>
       <li><a href="javascript:void(0)">경기/인천</a></li>
@@ -492,50 +436,35 @@
         <ul>
           <li>
             <img src="./img/ranking/2_seoul_1.jpg" alt="1" class="poster">
-            <div class="content_box">
-              <div class="title">
-                <h4>경복궁 생과방</h4>
-                <p>서울 | 경복궁</p>
-                <p>기간 | 2023.04.20 - 2023.06.28</p>
-              </div>
+            <div class="content_box"></div>
+            <div class="title">
+              <h4>경복궁 생과방</h4>
             </div>
           </li>
           <li>
-            <div class="rank">
-              <span>2</span>
-            </div>
             <img src="./img/ranking/2_seoul_2.jpg" alt="2" class="poster">
             <div class="content_box">
               <div class="title">
                 <h4>이지혜 클래식 콘서트</h4>
-                <p>서울 | 푸르지오 아트홀</p>
-                <p>기간 | 2023.06.04 </p>
+                <p>2023.06.04 </p>
               </div>
             </div>
           </li>
           <li>
-            <div class="rank">
-              <span>3</span>
-            </div>
             <img src="./img/ranking/2_seoul_3.jpg" alt="3" class="poster">
             <div class="content_box">
               <div class="title">
                 <h4>뮤지컬[트레이스 유]</h4>
-                <p>서울 | 링크아트센터 벅스홀</p>
-                <p>기간 | 2023.05.11-2023.08.20</p>
+                <p>2023.05.11-2023.08.20</p>
               </div>
             </div>
           </li>
           <li>
-            <div class="rank">
-              <span>1</span>
-            </div>
             <img src="./img/ranking/2_seoul_4.jpg" alt="4" class="poster">
             <div class="content_box">
               <div class="title">
                 <h4>창덕궁 달빛기행</h4>
-                <p>서울 | 창덕궁</p>
-                <p>기간 | 2023.04.13-2023.06.04</p>
+                <p>2023.04.13-2023.06.04</p>
               </div>
             </div>
           </li>
@@ -546,12 +475,9 @@
         <ul>
           <li>
             <img src="./img/ranking/2_gyeonggi_1.jpg" alt="1" class="poster">
-            <div class="content_box">
-              <div class="title">
-                <h4>뮤지컬 [생텍쥐페리]</h4>
-                <p>용인 | 포은아트홀</p>
-                <p>기간 | 2023.06.03-2023.06.04</p>
-              </div>
+            <div class="content_box"></div>
+            <div class="title">
+              <h4>뮤지컬 [생텍쥐페리]</h4>
             </div>
           </li>
           <li>
@@ -559,8 +485,7 @@
             <div class="content_box">
               <div class="title">
                 <h4>뮤지컬 [이퀄]</h4>
-                <p>서울 | 메타시어터 유니플렉스1관</p>
-                <p>기간 | 2023.07.19-2023.07.19</p>
+                <p>2023.07.19-2023.07.19</p>
               </div>
             </div>
           </li>
@@ -569,8 +494,7 @@
             <div class="content_box">
               <div class="title">
                 <h4>오르간과 합창음악</h4>
-                <p>부천 | 부천아트센터 콘서트홀</p>
-                <p>기간 | 2023.06.15-2023.06.15</p>
+                <p>2023.06.15-2023.06.15</p>
               </div>
             </div>
           </li>
@@ -579,8 +503,7 @@
             <div class="content_box">
               <div class="title">
                 <h4>최현우 [THE BRAIN]</h4>
-                <p>인천 | 인천문화예술회관 대공연장</p>
-                <p>기간 | 2023.06.27-2023.06.28</p>
+                <p>2023.06.27-2023.06.28</p>
               </div>
             </div>
           </li>
@@ -591,13 +514,9 @@
         <ul>
           <li>
             <img src="./img/ranking/2_busan_1.jpg" alt="1" class="poster">
-            <div class="content_box">
-              <div class="title">
-                <h4>뮤지컬 <레드북>
-                </h4>
-                <p>부산 | 드림씨어터</p>
-                <p>기간 | 2023.07.14 - 2023.07.16</p>
-              </div>
+            <div class="content_box"></div>
+            <div class="title">
+              <h4>뮤지컬 <레드북></h4>
             </div>
           </li>
           <li>
@@ -605,8 +524,7 @@
             <div class="content_box">
               <div class="title">
                 <h4>[리얼타임 코믹연극] 택시안에서</h4>
-                <p>부산 | 해바라기 소극장</p>
-                <p>기간 | 2019.03.15 - 2023.06.30</p>
+                <p>2019.03.15 - 2023.06.30</p>
               </div>
             </div>
           </li>
@@ -615,8 +533,7 @@
             <div class="content_box">
               <div class="title">
                 <h4>상상을 찍는 화가 에릭 요한슨展</h4>
-                <p>부산 | 부산문화회관 전시실</p>
-                <p>기간 | 2023.06.27 - 2023.10.08</p>
+                <p>2023.06.27 - 2023.10.08</p>
               </div>
             </div>
           </li>
@@ -625,8 +542,7 @@
             <div class="content_box">
               <div class="title">
                 <h4>이승철 콘서트 : RETRO Night</h4>
-                <p>부산 | 드림씨어터</p>
-                <p>기간 | 2023.07.08 - 2023.07.08</p>
+                <p>2023.07.08 - 2023.07.08</p>
               </div>
             </div>
           </li>
@@ -637,12 +553,9 @@
         <ul>
           <li>
             <img src="./img/ranking/2_chungcheong_1.jpg" alt="1" class="poster">
-            <div class="content_box">
-              <div class="title">
-                <h4>천안시립합창단 정기연주회</h4>
-                <p>천안 | 천안예술의전당 대공연장</p>
-                <p>기간 | 2023.05.30 - 2023.05.30</p>
-              </div>
+            <div class="content_box"></div>
+            <div class="title">
+              <h4>천안시립합창단 정기연주회</h4>
             </div>
           </li>
           <li>
@@ -650,8 +563,7 @@
             <div class="content_box">
               <div class="title">
                 <h4>루드윅 - 베토벤 더 피아노</h4>
-                <p>동해 | 동해문화예술회관 대공연장</p>
-                <p>기간 | 2023.06.10 - 2023.06.10</p>
+                <p>2023.06.10 - 2023.06.10</p>
               </div>
             </div>
           </li>
@@ -660,8 +572,7 @@
             <div class="content_box">
               <div class="title">
                 <h4>[괴담:위험한 해시태그]</h4>
-                <p>청주 | 소명아트홀</p>
-                <p>기간 | 2023.05.05 - 2023.08.27</p>
+                <p>2023.05.05 - 2023.08.27</p>
               </div>
             </div>
           </li>
@@ -670,8 +581,7 @@
             <div class="content_box">
               <div class="title">
                 <h4>연극 [사춘기 메들리] - 청주</h4>
-                <p>청주 | 소명아트홀</p>
-                <p>기간 | 2023.05.05 - 2023.08.26</p>
+                <p>2023.05.05 - 2023.08.26</p>
               </div>
             </div>
           </li>
@@ -682,12 +592,9 @@
         <ul>
           <li>
             <img src="./img/ranking/2_daegu_1.jpg" alt="1" class="poster">
-            <div class="content_box">
-              <div class="title">
-                <h4>제20회 대구펫쇼</h4>
-                <p>대구 | 엑스코 1층 4,5홀</p>
-                <p>기간 | 2023.06.09 - 2023.06.11</p>
-              </div>
+            <div class="content_box"></div>
+            <div class="title">
+              <h4>제20회 대구펫쇼</h4>
             </div>
           </li>
           <li>
@@ -695,8 +602,7 @@
             <div class="content_box">
               <div class="title">
                 <h4>슬라바 폴루닌의 [스노우쇼]</h4>
-                <p>대구 | 수성아트피아 대극장</p>
-                <p>기간 | 2023.05.24 - 2023.05.27</p>
+                <p>2023.05.24 - 2023.05.27</p>
               </div>
             </div>
           </li>
@@ -705,8 +611,7 @@
             <div class="content_box">
               <div class="title">
                 <h4>제14회 대구꽃박람회</h4>
-                <p>대구 | 엑스코 1층 동관 전시장</p>
-                <p>기간 | 2023.06.02 - 2023.06.04</p>
+                <p>2023.06.02 - 2023.06.04</p>
               </div>
             </div>
           </li>
@@ -715,8 +620,7 @@
             <div class="content_box">
               <div class="title">
                 <h4>조성진 & 발트앙상블 콘서트</h4>
-                <p>경주 | 경주예술의전당 화랑홀</p>
-                <p>기간 | 2023.06.22 - 2023.06.22</p>
+                <p>2023.06.22 - 2023.06.22</p>
               </div>
             </div>
           </li>
@@ -727,12 +631,9 @@
         <ul>
           <li>
             <img src="./img/ranking/2_junla_1.jpg" alt="1" class="poster">
-            <div class="content_box">
-              <div class="title">
-                <h4>박정현 전국투어 콘서트</h4>
-                <p>군산 | 예술의전당 대공연장</p>
-                <p>기간 | 2023.06.17 - 2023.06.17</p>
-              </div>
+            <div class="content_box"></div>
+            <div class="title">
+              <h4>박정현 전국투어 콘서트</h4>
             </div>
           </li>
           <li>
@@ -740,8 +641,7 @@
             <div class="content_box">
               <div class="title">
                 <h4>빈 심포니 & 장한나 내한 공연</h4>
-                <p>광주 | 광주문화예술회관 대극장</p>
-                <p>기간 | 2023.06.11</p>
+                <p>2023.06.11</p>
               </div>
             </div>
           </li>
@@ -750,8 +650,7 @@
             <div class="content_box">
               <div class="title">
                 <h4>오티움Ⅲ ‘South vs North’</h4>
-                <p>광주 | 광주문화예술회관 소극장</p>
-                <p>기간 | 2023.06.30</p>
+                <p>2023.06.30</p>
               </div>
             </div>
           </li>
@@ -760,8 +659,7 @@
             <div class="content_box">
               <div class="title">
                 <h4>국립발레단 〈지젤〉 - 여수</h4>
-                <p>여수 | GS칼텍스 예울마루</p>
-                <p>기간 | 2023.06.09 - 2023.06.10</p>
+                <p>2023.06.09 - 2023.06.10</p>
               </div>
             </div>
           </li>
@@ -772,12 +670,10 @@
         <ul>
           <li>
             <img src="./img/ranking/2_jeju_1.png" alt="1" class="poster">
-            <div class="content_box">
-              <div class="title">
-                <h4>삼다공원 야간콘서트</h4>
-                <p>제주 | 제주시 연동 삼다공원 일대</p>
-                <p>기간 | 2023.04.28 - 2023.06.16</p>
-              </div>
+            <div class="content_box"></div>
+            <div class="title">
+              <h4>삼다공원 야간콘서트</h4>
+              <p>2023.04.28 - 2023.06.16</p>
             </div>
           </li>
           <li>
@@ -785,8 +681,7 @@
             <div class="content_box">
               <div class="title">
                 <h4>뮤지컬 - 나는나비</h4>
-                <p>제주학생문화원&서귀포예술의전당</p>
-                <p>기간 | 2023.06.20 - 2023.06.22 </p>
+                <p>2023.06.20 - 2023.06.22 </p>
               </div>
             </div>
           </li>
@@ -795,8 +690,7 @@
             <div class="content_box">
               <div class="title">
                 <h4>제주 에코 뮤직페스티벌</h4>
-                <p>제주 | 제주돌문화공원</p>
-                <p>기간 | 2023.06.17</p>
+                <p>2023.06.17</p>
               </div>
             </div>
           </li>
@@ -805,8 +699,7 @@
             <div class="content_box">
               <div class="title">
                 <h4>마노르블랑 수국축제</h4>
-                <p>제주 | 마노르블랑</p>
-                <p>기간 | 2023.04-20~2023.08.31</p>
+                <p>2023.04-20~2023.08.31</p>
               </div>
             </div>
           </li>
@@ -818,7 +711,7 @@
   </section>
 
   <section class="pointbanner">
-    <img src="./img/eventbn2.png" alt="" class="banner">
+    <img src="./img/banner2.png" alt="" class="banner">
   </section>
 
   <footer>
