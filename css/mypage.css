@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  width: 100%;
+}
+body a {
+  color: #000;
+}
+body header {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #000;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+body header .head {
+  width: 90%;
+  margin: 0 auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header .head .arrow {
+  width: 10px;
+  transform: rotate(180deg);
+}
+body header .head h1 {
+  font-size: 1.25em;
+}
+body header .head .filter {
+  width: 20px;
+}
+body header .user {
+  width: 100%;
+  height: 130px;
+  border-bottom: 1px solid #898989;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+body header .user img {
+  width: 90px;
+}
+body header .user .name .user_name {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+body header .user .name .else {
+  position: relative;
+  top: 15px;
+  font-size: 0.75em;
+  display: flex;
+  gap: 15px;
+}
+body header .user .name .else a {
+  display: block;
+  border-bottom: 1px solid #000;
+}
+body #font_modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+body #font_modal .modal_box {
+  position: fixed;
+  top: 120px;
+  width: 100%;
+}
+body #font_modal .modal_box .title {
+  margin-bottom: 60px;
+}
+body #font_modal .modal_box .title h1 {
+  font-size: 45px;
+}
+body #font_modal .modal_box .title p {
+  font-size: 18px;
+}
+body #font_modal .modal_box .select p {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  gap: 30px;
+}
+body #font_modal .modal_box .select p button {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  background-color: #FFC909;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+body #font_modal .modal_box .select p button#nomal {
+  font-size: 18px;
+}
+body #font_modal .modal_box .select p span {
+  text-align: left;
+}
+body #font_modal .modal_box .select p:first-child {
+  margin-bottom: 30px;
+}
+body #reserve {
+  position: relative;
+  top: 130px;
+}
+body #reserve .tab {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #reserve .tab li {
+  width: 100%;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+body #reserve .tab li a {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+body #reserve .active {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+body #reserve .active li {
+  width: 100%;
+  height: 3px;
+}
+body #reserve .active li.on {
+  background-color: #FFC909;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
+}
+body #reserve .content_box {
+  width: 100%;
+  margin-top: 5%;
+}
+body #reserve .content_box .my_reserve {
+  width: 100%;
+}
+body #reserve .content_box .my_reserve .ticket {
+  border-radius: 10px;
+  box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+body #reserve .content_box .my_reserve .ticket .top {
+  width: 100%;
+  height: 50px;
+  background-color: #063370;
+  border-radius: 10px 10px 0 0;
+}
+body #reserve .content_box .my_reserve .ticket .top h3 {
+  color: #fff;
+  font-size: 1.25em;
+  line-height: 50px;
+  padding-left: 20px;
+}
+body #reserve .content_box .my_reserve .ticket .info {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+body #reserve .content_box .my_reserve .ticket .info img {
+  width: 120px;
+  height: 160px;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3);
+}
+body #reserve .content_box .my_reserve .ticket .info .content {
+  text-align: center;
+}
+body #reserve .content_box .my_reserve .ticket .info .content p {
+  font-size: 0.7em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+body #reserve .content_box .my_reserve .ticket .info .content p:first-child {
+  font-size: 0.9em;
+}
+body footer {
+  width: 100%;
+  position: relative;
+  top: 160px;
+  border-top: 1px solid #898989;
+}
+body footer ul {
+  width: 90%;
+  margin: 20px auto;
+}
+body footer ul li {
+  height: 60px;
+}
+body footer ul li a {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40%;
+  font-size: 1.1em;
+}
+body footer ul li a span {
+  width: 50%;
+}
+body footer ul li a img {
+  width: 8px;
+}/*# sourceMappingURL=mypage.css.map */

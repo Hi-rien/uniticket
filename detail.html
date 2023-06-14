@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Uniticket" />
+  <meta property="og:title" content="Uniticket" />
+  <meta property="og:description" content="모두가 하나 되는 쉬운 티켓팅" />
+  <meta property="og:image" content="./main_logo.png" />
+
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/detail.css">
+
+  <script src="./js/jquery-1.11.2.min.js"></script>
+  <script defer src="./js/common.js"></script>
+
+  <title>Uniticket</title>
+</head>
+
+<body>
+
+  <header>
+    <a href="./sub.html"><img src="./img/arrow_back.png"></a>
+    <a href="javascript:void(0)"><img src="./img/filter.png" class="filter"></a>
+  </header>
+
+  <article>
+    <div class="top_button">
+      <a href="javascript:void(0)" class="hide to_top"><span>Top</span></a>
+      <a href="./main.html"><img class="hide" src="./img/home_icon_wh.png" alt="메인으로 이동"></a>
+      <img class="arrow" src="./img/top_icon.png">
+    </div>
+  </article>
+
+  <div id="font_modal">
+    <div class="modal_box">
+      <div class="title">
+        <h1>Uniticket</h1>
+        <p>희망하는 글자 크기를 선택해 주새요.</p>
+      </div>
+      <div class="select">
+        <p>
+          <button id="nomal">기본</button>
+          <span>폰트 및 간격이 기본모드로 보여집니다.</span>
+        </p>
+        <p>
+          <button id="big">크게</button>
+          <span>폰트 및 간격이 유니모드에 <br>맞춰 크고 넓게 보여집니다.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="poster">
+    <img src="./img/poster/26_concert.gif" alt="불타는 트롯맨">
+  </div>
+
+  <section id="content_box">
+    <div class="info">
+      <div class="top">
+        <h2>
+          <불타는 트롯맨>전국투어 콘서트
+        </h2>
+        <img src="./img/shere_icon.png" alt="공유하기">
+      </div>
+      <div class="bottom">
+        <p>장소 | 수원 컨벤션센터</p>
+        <p>기간 | 2023.06.17 - 2023.06.18</p>
+      </div>
+      <div class="seat">
+        <div class="r">
+          <span>R석</span>
+          <span>잔여 <span class="red">100석</span></span>
+        </div>
+        <div class="s">
+          <span>S석</span>
+          <span>잔여 <span class="red">150석</span></span>
+        </div>
+        <div class="nomal">
+          <span>일반</span>
+          <span>잔여 <span class="red">250석</span></span>
+        </div>
+      </div>
+      <div class="banner">
+        <img src="./img/banner1.png" alt="할인광고">
+      </div>
+    </div>
+
+    <div class="detail_box">
+
+      <ul class="tab">
+        <li class="on"><a href="#section1">판매정보</a></li>
+        <li><a href="#section2">상세정보</a></li>
+        <li><a href="#section3">장소정보</a></li>
+      </ul>
+
+      <div id="section1">
+        <h4>좌석/가격 정보</h4>
+        <img class="pattern" src="./img/mappattern.png" alt="">
+        <div class="price">
+          <p class="p_title">정가</p>
+          <div class="seat">
+            <div class="r">
+              <img src="./img/detail_pattern1.jpg">
+              <span>R석</span>
+              <span><span class="red">150,000</span>원</span>
+            </div>
+            <div class="s">
+              <img src="./img/detail_pattern2.jpg">
+              <span>S석</span>
+              <span><span class="red">130,000</span>원</span>
+            </div>
+            <div class="nomal">
+              <img src="./img/detail_pattern3.png">
+              <span>일반</span>
+              <span><span class="red">11,000</span>원</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sale">
+          <p class="p_title">할인혜택</p>
+          <div class="sale_box">
+            <p>국민기초생활수급자</p>
+            <p>본인만 <span class="red">20%</span> 할인</p>
+          </div>
+          <p class="smal">* 증빙서류 미지참 시 현장에서 차액지불</p>
+        </div>
+
+        <div class="cancle">
+          <p class="p_title">예매 취소조건</p>
+          <table>
+            <tr>
+              <th rowspan="2">예매후</th>
+              <th>7일이내</th>
+              <td>취소수수료 없음</td>
+            </tr>
+            <tr>
+              <th>8일-10일 전</th>
+              <td>연극/전시 1장당 2,000원<br>
+                뮤지컬/콘서트/클래식 1장당 4,000원</td>
+            </tr>
+            <tr>
+              <th rowspan="3">관람일</th>
+              <th>9일-7일 전</th>
+              <td>티켓금액의 10%</td>
+            </tr>
+            <tr>
+              <th>6일-3일 전</th>
+              <td>티켓금액의 20%</td>
+            </tr>
+            <tr>
+              <th>2일-1일 전</th>
+              <td>티켓금액의 30%</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="return">
+          <p class="p_title">환불방법</p>
+          <p class="top">마이페이지>예매/취소내역>취소</p>
+          <div class="smal">
+            <p>* 취소 마감시간 이내에 진행 가능합니다.</p>
+            <p>* 단, 티켓이 배송된 이후에는 인터넷 취소가 불가하며 </p>
+            <p> 취소마감 시간 이전에 티켓이 아래 주소로 반송되어야 합니다.</p>
+          </div>
+        </div>
+
+        <div class="information">
+          <p>상품관련정보</p>
+          <ul>
+            <li>
+              <span>주최/기획</span>
+              <span>(주)케이엔마스터엔터테이먼트</span>
+            </li>
+            <li>
+              <span>고객문의</span>
+              <span>02-554-1510</span>
+            </li>
+            <li>
+              <span>공연시간</span>
+              <span>2023년 06월 17일(토) 540분</span>
+            </li>
+            <li>
+              <span>관람등급</span>
+              <span>전체관람가</span>
+            </li>
+            <li>
+              <span>출연자</span>
+              <span>보라미유, 볼빨간사춘기, 이무진, 하동균, <br> 이병진 외 다수</span>
+            </li>
+            <li>
+              <span>공연장소</span>
+              <span>서울 난지 한강공원</span>
+            </li>
+            <li>
+              <span>예매수수료</span>
+              <span>1,000원</span>
+            </li>
+            <li>
+              <span>배송료</span>
+              <span>3,200원</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="section2">
+        <img src="./img/detail1.jpg" alt="불타는 트롯맨 상세정보">
+      </div>
+
+      <div id="section3">
+        <img src="./img/detail2.jpg" alt="불타는 드롯맨 장소정보">
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer">
+      <div class="favorit">
+        <img src="./img/heart_icon1.png" alt="좋아요">
+        <span>2,650</span>
+      </div>
+      <a href="./reserve2.html"><span>예매하기</span></a>
+    </div>
+  </footer>
+
+  <script>
+    $(function () {
+
+      $('.favorit').click(function () {
+        if ($(this).find('img').attr('src') == './img/heart_icon1.png') {
+          $(this).find('img').attr('src', './img/heart_icon2.png')
+        } else {
+          $(this).find('img').attr('src', './img/heart_icon1.png')
+        }
+      })
+
+      $('.tab li a').click(function () {
+        $('.tab li').removeClass('on')
+        $(this).parent().addClass('on')
+      })
+
+      $(window).scroll(function() {
+
+        if(window.scrollY > $('.tab').offset().top) {
+          $('.tab').addClass('sticky')
+        }
+        if (window.scrollY < $('.detail_box').offset().top) {
+          $('.tab').removeClass('sticky')
+        }
+
+        if (window.scrollY > 1000) {
+          $('article').css({
+            right: '20px'
+          })
+        } else {
+          $('article').css({
+            right: '-50px'
+          })
+        }
+
+        if($('.top_button').hasClass('active')) {
+          $('.top_button').removeClass('active')
+          $('.arrow').removeClass('before')
+        }
+      })
+
+      $('article .top_button').click(function(e) {
+        $(this).addClass('active')
+        $('.arrow').addClass('before')
+      })
+
+      $('.arrow').click(function() {
+        if($(this).hasClass('before')) {
+          location.href = './sub.html'
+        }
+      })
+
+      $('.to_top').click(function() {
+        $('html, body').animate({
+          scrollTop: 0
+        },1000)
+      })
+
+    })
+
+
+  </script>
+
+</body>
+
+</html>

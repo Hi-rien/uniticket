@@ -70,31 +70,18 @@ $('.tab_slide .tab li').click(function() {
 })
 
 
-// 지역행사 & 추천행사 inner 포스터 생성
 
-  // $('.contents ul li').each(function() {
-  //   $(this).prepend("<img class='mini'>")
-  //   src = $(this).find('.poster').attr('src')
-  //   $(this).find('.mini').attr('src', src)
-  // })
 
 // 지역행사 랭킹 스티커
 
-  // $('#local .box li').each(function() {
-  //   $(this).prepend("<div class='rank'></div>")
-  //   $(this).find('.rank').prepend("<img src='./img/rank_icon.png'>")
-  //   $(this).find('.rank').prepend('<span></span>')
-
-  //   num = $(this).find('.poster').attr('alt')
-
-  //   $(this).find('.rank span').text(num)
+  $('#local .box').each(function() {
+    $(this).prepend("<div class='rank'></div>")
+    $(this).find('.rank').prepend("<img src='./img/rank_icon.png'>")
+    $(this).find('.rank').prepend('<span>1</span>')
     
-  // })
+  })
 
 
-  // $('#local .box li').each(function() {
-  //   $(this).find('.content_box').append("<a class='button' href='javascript:void(0)'>바로가기</a>")
-  // })
 
   
   // guide click
@@ -104,3 +91,7 @@ $('.tab_slide .tab li').click(function() {
     $(this).addClass('on')
   })
 
+
+  $('.box li').click(function() {
+    location.href = './sub.html'
+  })
