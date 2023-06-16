@@ -193,13 +193,7 @@ body .menu div {
   justify-content: center;
 }
 body .menu div img {
-  width: 20px;
-}
-body .menu div:last-child img {
-  width: 15px;
-}
-body .menu a img {
-  width: 20px;
+  width: 25px;
 }
 body #font_modal {
   width: 100%;
