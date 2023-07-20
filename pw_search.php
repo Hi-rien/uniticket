@@ -9,7 +9,7 @@
   $id = $_POST['id'];
   $hp = $_POST['hp'];
 
-  $sql = "select * from member where id='$id' AND hp='$hp'";
+  $sql = "select * from uni_member where id='$id' AND hp='$hp'";
   $result = mysqli_query($connect, $sql);
   $num_match = mysqli_fetch_array($result);
 

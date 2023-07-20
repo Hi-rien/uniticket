@@ -23,7 +23,7 @@
 
   mysqli_query($connect, 'set names utf8');
 
-  $sql = "select * from member where id='$id'";
+  $sql = "select * from uni_member where id='$id'";
 
   $result = mysqli_query($connect, $sql);
 

@@ -1,5 +1,5 @@
 
-create table member (
+create table uni_member (
   id varchar(15) not null,
   pass varchar(15) not null,
   name varchar(10) not null,

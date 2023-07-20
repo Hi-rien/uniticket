@@ -17,7 +17,7 @@
   include "dbinit.php";
   mysqli_query($connect, "set names utf8");
 
-  $sql = "select * from member where id='$id'";
+  $sql = "select * from uni_member where id='$id'";
   $result = mysqli_query($connect, $sql);
   $exit_id = mysqli_num_rows($result);
 
@@ -30,7 +30,7 @@
     ");
     exit;
   } else { 
-    $sql = "insert into member(id,pass,name,hp,email,addr)";
+    $sql = "insert into uni_member(id,pass,name,hp,email,addr)";
     $sql .= "values('$id','$pass','$name','$hp','$email','$addr')";
 
     mysqli_query($connect, $sql);
